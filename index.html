@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoorDash Canada MSM Knowledge Base</title>
+    <style>
+        :root {
+            --primary-color: #ff3008; /* DoorDash Red brand alignment */
+            --text-color: #1f2937;
+            --bg-light: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+        }
+
+        /* Header & Search */
+        header {
+            background: #fff;
+            padding: 1.2rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-container {
+            width: 400px;
+        }
+
+        #search-bar {
+            width: 100%;
+            padding: 0.6rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        #search-bar:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(255, 48, 8, 0.15);
+        }
+
+        /* Main Layout */
+        .container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* Sidebar Navigation */
+        aside {
+            width: 320px;
+            background: #fff;
+            border-right: 1px solid var(--border-color);
+            overflow-y: auto;
+            padding: 1rem;
+        }
+
+        .category-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: #6b7280;
+            margin: 1.5rem 0 0.5rem 0.5rem;
+            font-weight: 700;
+        }
+
+        .article-link {
+            display: block;
+            padding: 0.6rem 0.75rem;
+            color: #4b5563;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .article-link:hover {
+            background-color: #fff1f0;
+            color: var(--primary-color);
+        }
+
+        .article-link.active {
+            background-color: var(--primary-color);
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Content Area */
+        main {
+            flex: 1;
+            padding: 2.5rem;
+            overflow-y: auto;
+            background: #fff;
+            margin: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .article-header {
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1.2rem;
+        }
+
+        .article-header h1 {
+            font-size: 2rem;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .badge {
+            font-size: 0.8rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .badge.category {
+            background: #fff1f0;
+            color: var(--primary-color);
+            border: 1px solid rgba(255, 48, 8, 0.2);
+        }
+
+        .badge.tag {
+            background: #f3f4f6;
+            color: #4b5563;
+        }
+
+        /* Rich Text Styling inside Articles */
+        .article-body {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #374151;
+        }
+
+        .article-body p {
+            margin-bottom: 1.25rem;
+        }
+
+        .article-body h3 {
+            font-size: 1.3rem;
+            color: #111827;
+            margin: 1.8rem 0 0.8rem 0;
+        }
+
+        .article-body ul, .article-body ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-body blockquote {
+            background: #f9fafb;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        .article-body code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-title">
+            <h2>DoorDash Canada <span>• MSM Playbook</span></h2>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search playbook strings, tags, rules...">
+        </div>
+    </header>
+
+    <div class="container">
+        <aside id="sidebar">
+            </aside>
+
+        <main id="content-view">
+            </main>
+    </div>
+
+    <script>
+        // 1. DATA STORE (Complete Playbook Dataset)
+        const kbData = [
+            {
+                id: "role-overview",
+                title: "Role Overview & The Sales Funnel",
+                category: "1. Strategy",
+                tags: ["msm", "overview", "funnel", "reciprocity"],
+                content: `
+                    <p>The primary objective of a Merchant Success Manager (MSM) is to build and maintain consultative relationships with merchants (Mx) within an assigned Book of Business (BoB). The core focus centers around driving operational health and incremental sales growth.</p>
+                    <h3>The Law of Reciprocity Funnel</h3>
+                    <p>To systematically lower sales resistance, MSMs follow a strategic "order of operations" layout:</p>
+                    <ul>
+                        <li><strong>Value First:</strong> Begin client interactions by delivering immediate, zero-cost value. This includes setting up complimentary professional photoshoots or refining basic menu configurations.</li>
+                        <li><strong>The Psychological Anchor:</strong> Securing an initial, low-risk "yes" from the merchant establishes operational trust and rapport.</li>
+                        <li><strong>The Upside Pitch:</strong> Once value is realized, lean into fee-based upside configurations like Sponsored Listings, Custom Promotions, or premium marketplace package upgrades.</li>
+                    </ul>
+                `
+            },
+            {
+                id: "product-matrix",
+                title: "Product Knowledge Matrix",
+                category: "2. Products",
+                tags: ["commission", "dashpass", "ads", "loyalty"],
+                content: `
+                    <p>Utilize this unified product catalog to alignment merchant needs with targeted premium features:</p>
+                    <table style="width:100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; text-align: left;">
+                        <thead>
+                            <tr style="background-color: #f3f4f6; border-bottom: 2px solid #e5e7eb;">
+                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">Product</th>
+                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">Merchant Cost</th>
+                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">Expected Value / Goals</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Marketplace Packages</strong></td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Basic (20%), Plus (25%), Premier (29%)</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Higher tiers expand delivery radius, lower customer service fees, and unlock high-value DashPass subscriber access.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>DashPass</strong></td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Included standard in Plus & Premier tiers</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Unlocks $0 delivery for users. Typically drives a <strong>30% revenue uplift</strong> within 12 months.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Sponsored Listings (Ads)</strong></td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Pay-per-order ($3 - $12). $0 for views/clicks.</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Guarantees placement at top of customer feeds. Yields an average of a <strong>5x Return on Ad Spend (ROAS)</strong>.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Smart Promotions</strong></td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Variable parameters (e.g., Spend X Get Y)</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Dynamic algorithm adjusts targeted discounts in real-time to prioritize user acquisition.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Store Loyalty</strong></td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Cost of reward value upon user redemption</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Drives repeat purchase behavior. Leads to a 4% total sales lift and 6% frequency growth.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                `
+            },
+            {
+                id: "pre-call-research",
+                title: "Pre-Call Research Standards",
+                category: "3. Execution",
+                tags: ["research", "efficiency", "metrics", "preparation"],
+                content: `
+                    <p>To maximize active dialing metrics, Account Managers must cap pre-call analysis to a strict <strong>2 to 3-minute window</strong> per account. Use this checklist:</p>
+                    <ol>
+                        <li><strong>Time Zone Validation:</strong> Double-check merchant geographic metadata against local time variables to prevent out-of-bounds dials.</li>
+                        <li><strong>Isolate Opportunity Flags:</strong> Sort your master Book of Business (BoB) utilizing priority pipeline columns such as <code>SL_OPP</code> (Sponsored Listing targets) or <code>PROMO_OPP</code> (Promotion targets).</li>
+                        <li><strong>Performance Trend Spots:</strong> Navigate to the Merchant Portal under <em>Marketing -> Campaign Reporting</em>. Quickly evaluate 7-day and 30-day trailing sales deltas (noting red/green growth vectors).</li>
+                    </ol>
+                `
+            },
+            {
+                id: "contact-cadence",
+                title: "Contact Cadence & Outreach Etiquette",
+                category: "3. Execution",
+                tags: ["cadence", "compliance", "outreach", "limits"],
+                content: `
+                    <p>To protect merchant retention metrics and mitigate communication fatigue, all MSMs must follow strict outreach boundaries. Deviations violate compliance guidelines.</p>
+                    <blockquote>
+                        <strong>Daily Outreach Caps:</strong> Maximum of 3 total touchpoints per merchant account daily. This allotment allows for at most 2 phone calls and 1 email.
+                    </blockquote>
+                    <ul>
+                        <li><strong>Intraday Buffer:</strong> If dialing a single merchant twice in a single day, you must implement a mandatory <strong>4 to 6-hour cooling buffer</strong> between attempts.</li>
+                        <li><strong>Weekly Spacing Rules:</strong> If a targeted merchant does not engage with an outreach attempt, you must wait a minimum of <strong>24 hours</strong> before trying again.</li>
+                        <li><strong>Texting & Voicemail Limitations:</strong> Keep outbound voicemails brief—elicit curiosity for a callback instead of reading entire product value sheets. Text messaging is strictly prohibited unless an SMS thread is explicitly initiated by the client or you are routing a PactSafe legal contract.</li>
+                    </ul>
+                `
+            },
+            {
+                id: "bulk-email-pro",
+                title: "Bulk Email Pro Engine Architecture",
+                category: "4. Tools",
+                tags: ["automation", "apps-script", "sandbox", "signature"],
+                content: `
+                    <p>Bulk Email Pro is the custom workspace application layer deployed to manage outreach automation workflows natively inside Google Workspace infrastructure.</p>
+                    <h3>Sandbox Data Model</h3>
+                    <p>The core framework uses Google Apps Script execution permissions (<code>Session.getActiveUser().getEmail()</code>) to verify live environments safely. It builds an isolated container environment for every rep, preserving unique email signatures and personal sequencing configurations.</p>
+                    <h3>Data Privacy Isolation</h3>
+                    <p>If an Account Manager requires complete pipeline privacy away from the shared central registry, they can link an isolated Google Sheets database URL into the interface control panel. All operations, search logging, and tracking metrics bypass shared storage arrays to write directly to that specific user matrix.</p>
+                    <h3>The Signature Layout Fix</h3>
+                    <p>Standard email rendering clients frequently insert unexpected double-spaced layout blocks around traditional HTML paragraph elements (<code>&lt;p&gt;</code>). To ensure outward brand consistency, Bulk Email Pro processes all raw data strings through a custom layout filter (<code>normalizeSignatureHtml</code>), dynamically replacing loose elements with margin-free structural containers (<code>&lt;div&gt;</code>) for an ultra-compact visual display across standard mobile screens.</p>
+                `
+            }
+        ];
+
+        // 2. DOM ELEMENTS
+        const sidebar = document.getElementById('sidebar');
+        const contentView = document.getElementById('content-view');
+        const searchBar = document.getElementById('search-bar');
+
+        // 3. RENDER SIDEBAR (Grouped by Category Grid layout)
+        function renderSidebar(articles) {
+            sidebar.innerHTML = '';
+            
+            // Sort database content by category key value
+            const categories = {};
+            articles.forEach(article => {
+                if (!categories[article.category]) {
+                    categories[article.category] = [];
+                }
+                categories[article.category].push(article);
+            });
+
+            // Generate responsive navigation links
+            for (const category in categories) {
+                const catTitle = document.createElement('div');
+                catTitle.className = 'category-title';
+                catTitle.textContent = category;
+                sidebar.appendChild(catTitle);
+
+                categories[category].forEach(article => {
+                    const link = document.createElement('a');
+                    link.className = 'article-link';
+                    link.textContent = article.title;
+                    link.dataset.id = article.id;
+                    link.addEventListener('click', () => displayArticle(article.id));
+                    sidebar.appendChild(link);
+                });
+            }
+        }
+
+        // 4. DISPLAY SELECTED WORKSPACE DOCUMENT
+        function displayArticle(id) {
+            const article = kbData.find(a => a.id === id);
+            if (!article) return;
+
+            // Update styling to signal layout focus state switch
+            document.querySelectorAll('.article-link').forEach(link => {
+                link.classList.toggle('active', link.dataset.id === id);
+            });
+
+            // Rebuild active template view containers
+            contentView.innerHTML = `
+                <div class="article-header">
+                    <h1>${article.title}</h1>
+                    <div class="article-meta">
+                        <span class="badge category">${article.category}</span>
+                        ${article.tags.map(tag => `<span class="badge tag">#${tag}</span>`).join('')}
+                    </div>
+                </div>
+                <div class="article-body">
+                    ${article.content}
+                </div>
+            `;
+        }
+
+        // 5. LIVE SEARCH FILTERING LOGIC
+        searchBar.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            const filtered = kbData.filter(article => {
+                return (
+                    article.title.toLowerCase().includes(searchTerm) ||
+                    article.category.toLowerCase().includes(searchTerm) ||
+                    article.tags.some(tag => tag.toLowerCase().includes(searchTerm)) ||
+                    article.content.toLowerCase().includes(searchTerm)
+                );
+            });
+
+            renderSidebar(filtered);
+            
+            if (filtered.length > 0) {
+                displayArticle(filtered[0].id);
+            } else {
+                contentView.innerHTML = '<h2>No structural matching results</h2><p style="margin-top:0.5rem; color:#6b7280;">Try shifting your keyword queries.</p>';
+            }
+        });
+
+        // 6. INITIALIZE ENGINE RUNTIME
+        renderSidebar(kbData);
+        if (kbData.length > 0) {
+            displayArticle(kbData[0].id);
+        }
+    </script>
+</body>
+</html>
