@@ -6,7 +6,7 @@
     <title>DoorDash Canada MSM Knowledge Base</title>
     <style>
         :root {
-            --primary-color: #ff3008; /* DoorDash Red brand alignment */
+            --primary-color: #ff3008; /* DoorDash Red Brand Alignment */
             --text-color: #1f2937;
             --bg-light: #f9fafb;
             --border-color: #e5e7eb;
@@ -73,7 +73,7 @@
 
         /* Sidebar Navigation */
         aside {
-            width: 320px;
+            width: 340px;
             background: #fff;
             border-right: 1px solid var(--border-color);
             overflow-y: auto;
@@ -172,10 +172,18 @@
             margin-bottom: 1.25rem;
         }
 
-        .article-body h3 {
-            font-size: 1.3rem;
+        .article-body h2 {
+            font-size: 1.5rem;
             color: #111827;
-            margin: 1.8rem 0 0.8rem 0;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.4rem;
+        }
+
+        .article-body h3 {
+            font-size: 1.25rem;
+            color: #111827;
+            margin: 1.5rem 0 0.6rem 0;
         }
 
         .article-body ul, .article-body ol {
@@ -210,143 +218,303 @@
 
     <header>
         <div class="header-title">
-            <h2>DoorDash Canada <span>• MSM Playbook</span></h2>
+            <h2>DoorDash Canada <span>• MSM Internal Playbook</span></h2>
         </div>
         <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Search playbook strings, tags, rules...">
+            <input type="text" id="search-bar" placeholder="Search strategy, scripts, product guidelines...">
         </div>
     </header>
 
     <div class="container">
-        <aside id="sidebar">
-            </aside>
-
-        <main id="content-view">
-            </main>
+        <aside id="sidebar"></aside>
+        <main id="content-view"></main>
     </div>
 
     <script>
-        // 1. DATA STORE (Complete Playbook Dataset)
         const kbData = [
             {
-                id: "role-overview",
-                title: "Role Overview & The Sales Funnel",
-                category: "1. Strategy",
-                tags: ["msm", "overview", "funnel", "reciprocity"],
+                id: "msm-role-overview",
+                title: "MSM Role Overview",
+                category: "1. Core Strategy",
+                tags: ["overview", "bob", "consultative", "retention"],
                 content: `
-                    <p>The primary objective of a Merchant Success Manager (MSM) is to build and maintain consultative relationships with merchants (Mx) within an assigned Book of Business (BoB). The core focus centers around driving operational health and incremental sales growth.</p>
-                    <h3>The Law of Reciprocity Funnel</h3>
-                    <p>To systematically lower sales resistance, MSMs follow a strategic "order of operations" layout:</p>
+                    <p>The role of a Merchant Success Manager (MSM) is to establish and maintain consultative relationships with merchants (Mx) within an assigned Book of Business (BoB). The fundamental goals center around advising merchants on maximizing app performance and addressing core friction.</p>
+                    <h3>Primary Key Responsibility Areas:</h3>
                     <ul>
-                        <li><strong>Value First:</strong> Begin client interactions by delivering immediate, zero-cost value. This includes setting up complimentary professional photoshoots or refining basic menu configurations.</li>
-                        <li><strong>The Psychological Anchor:</strong> Securing an initial, low-risk "yes" from the merchant establishes operational trust and rapport.</li>
-                        <li><strong>The Upside Pitch:</strong> Once value is realized, lean into fee-based upside configurations like Sponsored Listings, Custom Promotions, or premium marketplace package upgrades.</li>
+                        <li><strong>Menu Optimization:</strong> Driving photo and video coverage across active menus to ensure merchants align with regional best practices.</li>
+                        <li><strong>Ads & Promos Acquisition:</strong> Advising on marketplace growth tools to accelerate new customer discovery.</li>
+                        <li><strong>Merchant Retention:</strong> Stabilizing partner operational health to proactively mitigate storefront churn risks.</li>
                     </ul>
                 `
             },
             {
-                id: "product-matrix",
-                title: "Product Knowledge Matrix",
-                category: "2. Products",
-                tags: ["commission", "dashpass", "ads", "loyalty"],
+                id: "sales-process-funnel",
+                title: "Sales Process & Order of Operations",
+                category: "1. Core Strategy",
+                tags: ["funnel", "reciprocity", "optimization", "rapport"],
                 content: `
-                    <p>Utilize this unified product catalog to alignment merchant needs with targeted premium features:</p>
+                    <p>Think of your order of operations as a progressive sales funnel designed to systematically minimize merchant resistance. Achieving an initial baseline alignment makes partners significantly more receptive to advanced premium features down the line.</p>
+                    <blockquote>
+                        <strong>The Law of Reciprocity:</strong> A psychological principle stating that human beings feel intrinsically obligated to return a favor when someone delivers value for them upfront.
+                    </blockquote>
+                    <h3>Funnel Architecture:</h3>
+                    <ol>
+                        <li><strong>Zero-Cost Optimization:</strong> Initiate outreach by providing unbilled value—such as arranging a complimentary professional photoshoot or optimizing basic descriptions.</li>
+                        <li><strong>Rapport Consolidation:</strong> Leverage the frictionless "yes" from the menu update to cultivate deep consultative credibility.</li>
+                        <li><strong>Paid Value Upsell:</strong> Once structural optimizations are confirmed, naturally pivot the merchant toward high-impact campaigns like Sponsored Listings, Custom Promotions, and Loyalty tiers.</li>
+                    </ol>
+                `
+            },
+            {
+                id: "marketplace-pricing-packages",
+                title: "Marketplace Pricing Packages",
+                category: "2. Product Catalog",
+                tags: ["pricing", "commission", "radius", "dashpass"],
+                content: `
+                    <p>DoorDash features three distinct merchant partnership pricing models structured around commission variables per delivery order:</p>
                     <table style="width:100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; text-align: left;">
                         <thead>
                             <tr style="background-color: #f3f4f6; border-bottom: 2px solid #e5e7eb;">
-                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">Product</th>
-                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">Merchant Cost</th>
-                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">Expected Value / Goals</th>
+                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">Plan Tier</th>
+                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">Commission Rate</th>
+                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; font-weight: 600;">Functional Features & Parameters</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Marketplace Packages</strong></td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Basic (20%), Plus (25%), Premier (29%)</td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Higher tiers expand delivery radius, lower customer service fees, and unlock high-value DashPass subscriber access.</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Basic</strong></td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">20%</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Smallest average delivery radius. Highest delivery fees for end consumers. Excludes all DashPass placement.</td>
                             </tr>
                             <tr>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>DashPass</strong></td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Included standard in Plus & Premier tiers</td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Unlocks $0 delivery for users. Typically drives a <strong>30% revenue uplift</strong> within 12 months.</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Plus</strong></td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">25%</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Expanded delivery radius bounds. Lower customer delivery fees. Includes native visibility to premium DashPass subscribers.</td>
                             </tr>
                             <tr>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Sponsored Listings (Ads)</strong></td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Pay-per-order ($3 - $12). $0 for views/clicks.</td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Guarantees placement at top of customer feeds. Yields an average of a <strong>5x Return on Ad Spend (ROAS)</strong>.</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Smart Promotions</strong></td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Variable parameters (e.g., Spend X Get Y)</td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Dynamic algorithm adjusts targeted discounts in real-time to prioritize user acquisition.</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Store Loyalty</strong></td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Cost of reward value upon user redemption</td>
-                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Drives repeat purchase behavior. Leads to a 4% total sales lift and 6% frequency growth.</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;"><strong>Premier</strong></td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">29%</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Largest available delivery radius. Lowest customer delivery fees. Includes DashPass placement and provides a $50 rebate when spending $100+ on marketing monthly.</td>
                             </tr>
                         </tbody>
                     </table>
                 `
             },
             {
-                id: "pre-call-research",
-                title: "Pre-Call Research Standards",
-                category: "3. Execution",
-                tags: ["research", "efficiency", "metrics", "preparation"],
+                id: "dashpass-sponsored-listings",
+                title: "DashPass & Sponsored Listings",
+                category: "2. Product Catalog",
+                tags: ["dashpass", "ads", "sl", "roas", "cpa"],
                 content: `
-                    <p>To maximize active dialing metrics, Account Managers must cap pre-call analysis to a strict <strong>2 to 3-minute window</strong> per account. Use this checklist:</p>
-                    <ol>
-                        <li><strong>Time Zone Validation:</strong> Double-check merchant geographic metadata against local time variables to prevent out-of-bounds dials.</li>
-                        <li><strong>Isolate Opportunity Flags:</strong> Sort your master Book of Business (BoB) utilizing priority pipeline columns such as <code>SL_OPP</code> (Sponsored Listing targets) or <code>PROMO_OPP</code> (Promotion targets).</li>
-                        <li><strong>Performance Trend Spots:</strong> Navigate to the Merchant Portal under <em>Marketing -> Campaign Reporting</em>. Quickly evaluate 7-day and 30-day trailing sales deltas (noting red/green growth vectors).</li>
-                    </ol>
-                `
-            },
-            {
-                id: "contact-cadence",
-                title: "Contact Cadence & Outreach Etiquette",
-                category: "3. Execution",
-                tags: ["cadence", "compliance", "outreach", "limits"],
-                content: `
-                    <p>To protect merchant retention metrics and mitigate communication fatigue, all MSMs must follow strict outreach boundaries. Deviations violate compliance guidelines.</p>
-                    <blockquote>
-                        <strong>Daily Outreach Caps:</strong> Maximum of 3 total touchpoints per merchant account daily. This allotment allows for at most 2 phone calls and 1 email.
-                    </blockquote>
+                    <h2>DashPass</h2>
+                    <p>DoorDash's premium user subscription program. DashPass subscribers order twice as often and spend an average of 2.5x more per checkout. Enrolled merchants generally experience an average <strong>30% revenue uplift</strong> within 12 months. There are no extra marketing costs beyond the standard Plus or Premier tier rates.</p>
+                    
+                    <h2>Sponsored Listings (Ads)</h2>
+                    <p>Sponsored Listings (SLs) boost marketplace visibility by placing merchants near the top of target search queries, homepage carousels, and cuisine filters. Placement targets are dynamically populated via backend business tags and active menu structures.</p>
+                    <h3>Financial Structure & Performance:</h3>
                     <ul>
-                        <li><strong>Intraday Buffer:</strong> If dialing a single merchant twice in a single day, you must implement a mandatory <strong>4 to 6-hour cooling buffer</strong> between attempts.</li>
-                        <li><strong>Weekly Spacing Rules:</strong> If a targeted merchant does not engage with an outreach attempt, you must wait a minimum of <strong>24 hours</strong> before trying again.</li>
-                        <li><strong>Texting & Voicemail Limitations:</strong> Keep outbound voicemails brief—elicit curiosity for a callback instead of reading entire product value sheets. Text messaging is strictly prohibited unless an SMS thread is explicitly initiated by the client or you are routing a PactSafe legal contract.</li>
+                        <li><strong>CPA Financial Model:</strong> Unlike external advertising channels that charge per click or view (CPC), DoorDash uses a strict Cost Per Acquisition (CPA) structure[cite: 3, 13]. Merchants pay a flat fee per conversion ($3 - $12); views, impressions, and clicks are entirely unbilled.</li>
+                        <li><strong>Expected Returns:</strong> Campaigns deliver up to 2x impression exposure and pull an average of a <strong>5x Return on Ad Spend (ROAS)</strong>.</li>
                     </ul>
                 `
             },
             {
-                id: "bulk-email-pro",
-                title: "Bulk Email Pro Engine Architecture",
-                category: "4. Tools",
-                tags: ["automation", "apps-script", "sandbox", "signature"],
+                id: "promotions-smart-campaigns",
+                title: "Marketing Promotions & Smart Campaigns",
+                category: "2. Product Catalog",
+                tags: ["promotions", "bogo", "twd", "winback", "roi"],
                 content: `
-                    <p>Bulk Email Pro is the custom workspace application layer deployed to manage outreach automation workflows natively inside Google Workspace infrastructure.</p>
-                    <h3>Sandbox Data Model</h3>
-                    <p>The core framework uses Google Apps Script execution permissions (<code>Session.getActiveUser().getEmail()</code>) to verify live environments safely. It builds an isolated container environment for every rep, preserving unique email signatures and personal sequencing configurations.</p>
-                    <h3>Data Privacy Isolation</h3>
-                    <p>If an Account Manager requires complete pipeline privacy away from the shared central registry, they can link an isolated Google Sheets database URL into the interface control panel. All operations, search logging, and tracking metrics bypass shared storage arrays to write directly to that specific user matrix.</p>
-                    <h3>The Signature Layout Fix</h3>
-                    <p>Standard email rendering clients frequently insert unexpected double-spaced layout blocks around traditional HTML paragraph elements (<code>&lt;p&gt;</code>). To ensure outward brand consistency, Bulk Email Pro processes all raw data strings through a custom layout filter (<code>normalizeSignatureHtml</code>), dynamically replacing loose elements with margin-free structural containers (<code>&lt;div&gt;</code>) for an ultra-compact visual display across standard mobile screens.</p>
+                    <p>DoorDash Promotions leverage machine learning and dynamic algorithms to inject targeted consumer offers to optimize conversion. Review the baseline catalog configurations below:</p>
+                    <ul>
+                        <li><strong>Smart Campaigns:</strong> Data-driven infrastructure that consolidates multiple promotional variations into a single run, adjusting targeted offers in real time based on consumer intent.</li>
+                        <li><strong>Spend $X, Get $Y (SxGy):</strong> Structured to lift average ticket values. Cost to merchant involves a flat $0.99 marketing processing fee per order plus the chosen discount value. Drives an average 16% sales uplift and a 6x ROI.</li>
+                        <li><strong>Try With Discount (TWD):</strong> Incentivizes net-new customer acquisition by providing 20% off the first order over $15 (capped at a $5 discount). Cost to merchant is $0.99 per order plus the discount. Delivers up to a 40% sales increase and 7.5x ROI.</li>
+                        <li><strong>Try Me Free (TMF):</strong> Waives delivery fees on first-time orders over $15 to attract new customers. Cost to merchant is a $4.99 acquisition fee on the initial order. Averages a 60% increase in long-term sales revenue. <em>Note: Not ideal for merchants on DashPass.</em></li>
+                        <li><strong>Order Again & Save (OAAS / Win-Back):</strong> Targets historical customers who have not placed an order within 6+ months. Cost is $0.99 per order plus the chosen merchant discount. Averages a 17% sales recovery rate and a 6x ROAS.</li>
+                        <li><strong>Buy One, Get One (BOGO):</strong> Injects immediate visibility. Cost is $0.99 per order plus the raw cost of goods (not full retail price). Yields a 19% sales lift and 3x ROI. Best paired with high-margin items.</li>
+                        <li><strong>Happy Hour:</strong> Restricts promotional discounting exclusively to the mid-afternoon low-volume window (2:00 PM – 5:00 PM) to flatten off-peak order declines. Injects an average 33% incremental sales lift during the targeted hours.</li>
+                    </ul>
+                `
+            },
+            {
+                id: "store-loyalty-programs",
+                title: "Store Loyalty Programs",
+                category: "2. Product Catalog",
+                tags: ["loyalty", "rewards", "admin", "retention"],
+                content: `
+                    <p>Store Loyalty allows customers to build structural account rewards ($ off) after crossing specific gross spend thresholds with the merchant. It acts as a perfect retention layer alongside new-customer acquisition ads.</p>
+                    <h3>Key Parameters:</h3>
+                    <ul>
+                        <li><strong>Zero Marketing Fees:</strong> Merchants incur completely $0 administrative or processing fees from DoorDash. The singular cost is the face value of the reward upon consumer redemption.</li>
+                        <li><strong>Expected Lift:</strong> Drives an average 4% increase in gross sales and a 6% lift in overall order frequency inside 8 weeks.</li>
+                    </ul>
+                    <h3>Escalation & Enrollment Bugs:</h3>
+                    <p>Merchants must possess Business Admin account security roles to activate Store Loyalty. If an enrollment error banner surfaces despite correct permissions, it is usually a backend bug triggered when a store shifts to a new Business ID with an active loyalty program. Check store change records in MINT and escalate to <code>#mx-ads-promos-loyalty-sales-questions</code>.</p>
+                `
+            },
+            {
+                id: "pre-call-research-standards",
+                title: "Pre-Call Research Standards",
+                category: "3. Execution Tactics",
+                tags: ["research", "efficiency", "opp", "trends"],
+                content: `
+                    <p>Pre-call research is restricted to a strict <strong>2 to 3-minute window</strong> per store to maintain active dialing efficiency. Focus exclusively on mapping these structural elements:</p>
+                    <ul>
+                        <li><strong>Time Zone Alignment:</strong> Validate the merchant's time zone layout against Costa Rica time to ensure dialing occurs strictly within optimal operational windows.</li>
+                        <li><strong>Binary Opportunity Identification:</strong> Check your Book of Business (BoB) columns to quickly screen targets:
+                            <br><code>SL_OPP</code>: Injects a 1 if there is an available unpitched ad opportunity.
+                            <br><code>PROMO_OPP</code>: Injects a 1 if there is an available promotion space.
+                        </li>
+                        <li><strong>Campaign Reporting:</strong> Log into the Merchant Portal and navigate to <em>Marketing -> Campaign Reporting</em>. Cross-reference trailing 7-day and 30-day performance trends before making pitch assumptions.</li>
+                        <li><strong>Sales Trends:</strong> Access <em>Insights -> Sales</em> to spot directional performance curves. Identify green or red delta arrows to anchor your introductory value hook.</li>
+                    </ul>
+                `
+            },
+            {
+                id: "outreach-scripts-framework",
+                title: "Outreach Scripts & Opening Hooks",
+                category: "3. Execution Tactics",
+                tags: ["scripts", "opening", "elevator", "objections"],
+                content: `
+                    <h2>Introductory Call Hook</h2>
+                    <p><em>"Hi, this is [Name] calling on behalf of DoorDash on a recorded line for quality purposes. Is [Decision Maker Name] available?  Hi [DM Name], I wanted to quickly introduce myself today as your assigned Account Manager. My primary job is to monitor opportunities for both your storefront's sales growth and operational health. I was auditing your portal and noticed..." </em></p>
+                    
+                    <h2>Value Proposition Talk Tracks</h2>
+                    <h3>1. Menu Photos Elevator Pitch</h3>
+                    <p><em>"Photos play a critical role in conversion. New customers have no historical baseline for what your food tastes like; they eat with their eyes before they spend their hard-earned money. I can submit an administrative case today to arrange a professional photoshoot at completely no cost to you to ensure your menu has clean coverage."</em></p>
+                    
+                    <h3>2. Operations Quality Hook</h3>
+                    <p><em>"DoorDash targets clear performance goals based on the top 20% of merchants nationwide (covering Order Accuracy, wait limits, and cancellation deltas). Your metrics indicate an opportunity for optimization, and I want to help your kitchen streamline these items to secure your placement in the 'Most Loved' carousel."</em></p>
+                `
+            },
+            {
+                id: "objection-handling-framework",
+                title: "Objection Handling Matrix",
+                category: "3. Execution Tactics",
+                tags: ["objections", "rebuttals", "cpa", "dayparting"],
+                content: `
+                    <p>MSMs must avoid debating features and instead focus on addressing risk and opportunity costs[cite: 18]. Use these proven rebuttal structures:</p>
+                    
+                    <h3>"This is too expensive / I will lose money"</h3>
+                    <p><strong>Rebuttal:</strong> <em>"I completely understand that margin health is top of mind. What separates our marketplace marketing is that it runs on a strict CPA model—you don't pay a dime for views, impressions, or clicks. You only pay when we deliver an actual, completed order directly to your kitchen ."</em> Pivot into incremental order margins.</p>
+                    
+                    <h3>"I am already running ads on Google or Facebook"</h3>
+                    <p><strong>Rebuttal:</strong> <em>"Social media ads deliver impressions to anyone scrolling through a feed. DoorDash ads are displayed exclusively to customers who are hungry, within your delivery zone, and actively looking to complete a purchase right now. Plus, those platforms bill you per click regardless of results; we only bill when food is sold."</em></p>
+                    
+                    <h3>"The recommended $12 bid price is too high"</h3>
+                    <p><strong>Rebuttal:</strong> <em>"The average marketplace bid sits between $3 and $4. We leave your campaign set to auto-bidding, which programmatically keeps your bid at the lowest competitive price to win the auction, and your cap ensures the campaign turns off the second your weekly budget floor is met."</em></p>
+                    
+                    <h3>Tactical Execution: Dayparting</h3>
+                    <p>If a merchant rejects an ad campaign due to operational limits during peak weekend rushes, deploy <strong>Dayparting</strong>. Restrict the ad campaign's active display window to their off-peak hours (e.g., lunch slowdowns or mid-week blocks) to pull incremental volume without overwhelming staff during dinner rushes.</p>
+                `
+            },
+            {
+                id: "contact-strategy-cadence",
+                title: "Contact Strategy & Compliance Cadence",
+                category: "4. Policy & Governance",
+                tags: ["compliance", "cadence", "etiquette", "limits", "texting"],
+                content: `
+                    <p>To preserve high merchant satisfaction and prevent outreach fatigue, all MSMs must operate strictly within these compliance bounds. Deviations violate QA policy guidelines.</p>
+                    
+                    <h3>Daily Outreach Caps</h3>
+                    <ul>
+                        <li>Maximum of <strong>3 total touchpoints</strong> per merchant account per day.</li>
+                        <li>Reps are permitted to make at most <strong>2 phone calls and send 1 email</strong> daily.</li>
+                    </ul>
+                    
+                    <h3>Intraday Buffer Rules</h3>
+                    <p>If you conduct a second call attempt to the same merchant within a single shift, you must implement a mandatory <strong>4 to 6-hour cooling buffer</strong> between your calls.</p>
+                    
+                    <h3>Weekly Spacing Floor</h3>
+                    <p>Outreach attempts must be gradually distributed over the course of the week. If a merchant does not respond to a call or email, you must wait a minimum of <strong>24 hours</strong> before trying to contact that specific lead again. Don't call the same account every single day.</p>
+                    
+                    <h3>Corporate Texting Policy</h3>
+                    <p>Texting merchants through Outreach or internal vectors is strictly prohibited unless meeting these criteria:</p>
+                    <ol>
+                        <li>The merchant has explicitly consented to text communications from DoorDash in writing.</li>
+                        <li>The merchant initiates the SMS exchange.</li>
+                        <li>The rep is sending required contract sign-offs through PactSafe.</li>
+                    </ol>
+                `
+            },
+            {
+                id: "sales-crediting-validation",
+                title: "CW Validation (Sales Crediting)",
+                category: "4. Policy & Governance",
+                tags: ["crediting", "goals", "validation", "churn"],
+                content: `
+                    <p>Sales crediting is audited on strict timeline metrics evaluated against Beginning of Quarter (BOQ) and End of Quarter (EOQ) snapshots.</p>
+                    
+                    <h3>Optimized Mx Performance Metrics (Ads & Promos):</h3>
+                    <ul>
+                        <li><strong>Net New Ads/Promo Stores:</strong> Calculated based on the net store count active at the close of the quarter vs. BOQ metrics.</li>
+                        <li><strong>Churn Realities:</strong> If a store signs up for an ad campaign but cancels or churns out within the same quarter, it nets a score of <strong>0</strong>.</li>
+                        <li><strong>Controllable Volume:</strong> If a store begins the quarter with an active ad campaign but churns off during your cycle, it counts as <strong>-1</strong> net store against your attainment metric.</li>
+                    </ul>
+                    
+                    <h3>Unoptimized Mx Performance Metrics (Account Management):</h3>
+                    <p>Ramping and account updates for unoptimized books focus on inputs and operational metrics:</p>
+                    <ol>
+                        <li><strong>Merchant Retention %:</strong> Total unique merchant storefronts retained over the period.</li>
+                        <li><strong>Photos Added:</strong> Net count of clean, verified menu photos published.</li>
+                        <li><strong>Videos Added:</strong> Net unique storefront video integrations completed.</li>
+                    </ol>
+                `
+            },
+            {
+                id: "system-permissions-troubleshooting",
+                title: "System Permissions Setup",
+                category: "5. Technical Tooling",
+                tags: ["permissions", "raven", "sfdc", "portal"],
+                content: `
+                    <p>Access configuration requires bulk team assignment or manual Raven helpdesk ticket creation. Follow these instructions to avoid routing rejections:</p>
+                    
+                    <h3>Bulk Automated Assignments</h3>
+                    <p>Permissions for **Outreach**, **Chorus**, and **Salesforce DDMx** are processed directly in bulk arrays via BizApps through your Team Lead. No individual agent action is needed.</p>
+                    
+                    <h3>Merchant Portal Manual Raven Tickets</h3>
+                    <p>Reps must submit two distinct requests on the internal ticketing desk. Split your requests into Sensitive and Non-Sensitive tokens:</p>
+                    
+                    <ul>
+                        <li><strong>Ticket 1 (Sensitive Permissions Category):</strong>
+                            <br><em>Justification:</em> Required to perform role tasks. Need portal clearance to guide SSMO, upload photos, and edit menus on behalf of merchants.
+                            <br><em>Tokens needed:</em> <code>Perm_manage_business_dashboard_view</code>, <code>Perm_edit_menu</code>, <code>perm_merchant_reports</code>.
+                        </li>
+                        <li><strong>Ticket 2 (Non-Sensitive Permissions Category):</strong>
+                            <br><em>Tokens needed:</em> <code>Perm_view_store_settings</code>, <code>perm_always_allow_admin_gateway_access</code>, <code>perm_view_business</code>, <code>perm_view_email</code>, <code>perm_view_financial_info</code>, <code>perm_view_store_info</code>.
+                        </li>
+                    </ul>
+                `
+            },
+            {
+                id: "bulk-email-pro-architecture",
+                title: "Bulk Email Pro System Architecture",
+                category: "5. Technical Tooling",
+                tags: ["bulk-email", "apps-script", "sandbox", "signature-fix"],
+                content: `
+                    <p>Bulk Email Pro is the custom multi-user utility engineered by Esteban Golfin to automate email personalization natively via the Gmail API and Google Sheets[cite: 3, 17, 21].</p>
+                    
+                    <h3>The Session-Based Sandbox Model</h3>
+                    <p>The core engine pulls the authenticated Google Workspace session email at initialization via <code>Session.getActiveUser().getEmail()</code>. This entirely removes manual login dropdowns, eliminates human error, and isolates user profile settings, template containment arrays, and logging vectors.</p>
+                    
+                    <h3>Pipeline Isolation Redirection</h3>
+                    <p>To secure complete data privacy away from the centralized registry, reps can input a private Google Sheet spreadsheet URL directly into the dashboard panel[cite: 3, 16]. The Web App instantly redirects its fetch and edit loops, writing status codes and transaction logs exclusively to that agent's hidden document matrix.</p>
+                    
+                    <h3>The Gmail Spacing Bug Normalizer</h3>
+                    <p>Rich-text layout components wrap text formatting strings in paragraph tags (<code>&lt;p&gt;</code>)[cite: 3, 17]. When transmitted to email clients like Gmail or Outlook, default client styles inject vertical line padding, breaking layout spacing[cite: 3, 17]. To fix this, Bulk Email Pro routes signatures through an automated parser function (<code>normalizeSignatureHtml</code>), converting loose structures into margin-free container blocks (<code>&lt;div&gt;</code>) to guarantee clean, single-spaced layouts across all mobile views[cite: 3, 17].</p>
                 `
             }
         ];
 
-        // 2. DOM ELEMENTS
+        // DOM ELEMENTS
         const sidebar = document.getElementById('sidebar');
         const contentView = document.getElementById('content-view');
         const searchBar = document.getElementById('search-bar');
 
-        // 3. RENDER SIDEBAR (Grouped by Category Grid layout)
+        // RENDER SIDEBAR (Grouped by Category)
         function renderSidebar(articles) {
             sidebar.innerHTML = '';
             
-            // Sort database content by category key value
             const categories = {};
             articles.forEach(article => {
                 if (!categories[article.category]) {
@@ -355,8 +523,9 @@
                 categories[article.category].push(article);
             });
 
-            // Generate responsive navigation links
-            for (const category in categories) {
+            const sortedCategories = Object.keys(categories).sort();
+
+            sortedCategories.forEach(category => {
                 const catTitle = document.createElement('div');
                 catTitle.className = 'category-title';
                 catTitle.textContent = category;
@@ -370,20 +539,18 @@
                     link.addEventListener('click', () => displayArticle(article.id));
                     sidebar.appendChild(link);
                 });
-            }
+            });
         }
 
-        // 4. DISPLAY SELECTED WORKSPACE DOCUMENT
+        // DISPLAY SELECTED ARTICLE
         function displayArticle(id) {
             const article = kbData.find(a => a.id === id);
             if (!article) return;
 
-            // Update styling to signal layout focus state switch
             document.querySelectorAll('.article-link').forEach(link => {
                 link.classList.toggle('active', link.dataset.id === id);
             });
 
-            // Rebuild active template view containers
             contentView.innerHTML = `
                 <div class="article-header">
                     <h1>${article.title}</h1>
@@ -398,7 +565,7 @@
             `;
         }
 
-        // 5. LIVE SEARCH FILTERING LOGIC
+        // LIVE SEARCH FILTER
         searchBar.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase();
             
@@ -416,11 +583,11 @@
             if (filtered.length > 0) {
                 displayArticle(filtered[0].id);
             } else {
-                contentView.innerHTML = '<h2>No structural matching results</h2><p style="margin-top:0.5rem; color:#6b7280;">Try shifting your keyword queries.</p>';
+                contentView.innerHTML = '<h2>No matching playbook topics found</h2><p style="margin-top:0.5rem; color:#6b7280;">Try searching for specific parameters like "commission", "cadence", "Raven", or "CPA".</p>';
             }
         });
 
-        // 6. INITIALIZE ENGINE RUNTIME
+        // INITIALIZE APP
         renderSidebar(kbData);
         if (kbData.length > 0) {
             displayArticle(kbData[0].id);
