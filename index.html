@@ -29,7 +29,6 @@
             overflow: hidden;
         }
 
-        /* Header Layout */
         header {
             background: #fff;
             padding: 1.2rem 2rem;
@@ -74,14 +73,12 @@
             box-shadow: 0 0 0 3px rgba(255, 48, 8, 0.15);
         }
 
-        /* Structural Container */
         .container {
             display: flex;
             flex: 1;
             overflow: hidden;
         }
 
-        /* Sidebar Component */
         aside {
             width: var(--sidebar-width);
             background: #fff;
@@ -129,7 +126,6 @@
             font-weight: 600;
         }
 
-        /* Document Display Viewport */
         main {
             flex: 1;
             padding: 2.5rem 3.5rem;
@@ -178,7 +174,6 @@
             color: #4b5563;
         }
 
-        /* Document Body Copy Formatting */
         .article-body {
             font-size: 1rem;
             line-height: 1.65;
@@ -230,7 +225,6 @@
             color: #dc2626;
         }
 
-        /* Table Architecture Styling */
         .article-body table {
             width: 100%;
             border-collapse: collapse;
@@ -254,6 +248,15 @@
         .article-body tr:nth-child(even) {
             background-color: #fbfbfc;
         }
+
+        .signature-box {
+            border: 1px dashed #ced4da;
+            padding: 1rem;
+            background: #f8f9fa;
+            margin: 1rem 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body>
@@ -274,26 +277,26 @@
 
     <script>
         const kbData = [
-            // CATEGORY 1: GENERAL & OVERVIEW
-{
+            // CATEGORY 1: GENERAL
+            {
                 id: "msm-role-overview",
                 title: "MSM Role Overview",
-                category: "1. Core Strategy",
-                tags: ["overview", "bob", "consultative", "retention"],
+                category: "1. General",
+                tags: ["overview", "bob", "optimization", "retention"],
                 content: `
                     <p>The role of a Merchant Success Manager (MSM) is to establish and maintain relationships with merchants (Mx) that are in their assigned book of business (BoB) for the purpose of helping Mx in several key areas:</p>
                     <ul>
                         <li><strong>Menu Optimization:</strong> <a href="https://docs.google.com/presentation/d/1hDe1RQJZvjz4zxkci3iHeNhbvQzLtjJdRVGTr7aK50k/edit?usp=sharing" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">[INTERNAL ONLY] Menu Best Practices Guide</a></li>
-                        <li><strong>Photo Coverage:</strong> Scaling item image visibility across active menus.</li>
-                        <li><strong>Video Coverage:</strong> Enhancing consumer context with modern store content elements.</li>
-                        <li><strong>Ads and Promos:</strong> Driving marketplace scaling and new user discovery workflows.</li>
-                        <li><strong>Retention:</strong> Securing partnership alignment to structurally prevent storefront churn.</li>
+                        <li><strong>Photo Coverage</strong></li>
+                        <li><strong>Video Coverage</strong></li>
+                        <li><strong>Ads and Promos</strong></li>
+                        <li><strong>Retention</strong></li>
                     </ul>
                     <p>It is imperative that all MSMs become knowledgeable in menu optimization (photos + videos), Ads and Promos acquisition and retention to be successful as an Account Manager. It is a consultative sales role that requires you (as the expert) to be able to confidently advise Mx on how to achieve their business goals and resolve their pain points.</p>
                 `
             },
             // CATEGORY 2: PRODUCT KNOWLEDGE
-{
+            {
                 id: "prod-marketplace-packages",
                 title: "Marketplace Packages",
                 category: "2. Product Knowledge",
@@ -302,10 +305,8 @@
                     <p style="margin-bottom: 1.5rem;">
                         <a href="https://merchants.doordash.com/en-us/products" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">Merchant Pricing for Marketplace and Commerce Platform</a>
                     </p>
-                    
                     <h3>Marketplace pricing plans made to work for you</h3>
                     <p>Enjoy all our partnership plans with zero payment processing fees. Change or cancel your plan at any time.</p>
-                    
                     <table>
                         <thead>
                             <tr>
@@ -317,18 +318,18 @@
                         <tbody>
                             <tr>
                                 <td><strong>Basic</strong></td>
-                                <td>20% Commission per delivery order</td>
-                                <td>Save on cost. Reach customers nearby—has the smallest average delivery radius. Highest customer delivery fee. Does not provide access to DashPass members.</td>
+                                <td>20% commission per delivery order</td>
+                                <td>“Save on cost” - Reach customers nearby - Has the smallest average delivery radius. Highest customer delivery fee - Does not provide access to DashPass members.</td>
                             </tr>
                             <tr>
                                 <td><strong>Plus</strong></td>
-                                <td>25% Commission per delivery order</td>
-                                <td>Reach more customers farther away on DoorDash. Has a larger average delivery radius than Basic, but smaller than Premier. Lower customer delivery fee. Access DashPass members who order twice as often and spend 2.5× more.</td>
+                                <td>25% commission per delivery order</td>
+                                <td>“Reach more customers” - Reach customers farther away on DoorDash - Has a larger average delivery radius than the Basic plan, but smaller than the Premier plan. Lower customer delivery fee. Access DashPass members who order twice as often and spend 2.5× more.</td>
                             </tr>
                             <tr>
                                 <td><strong>Premier</strong></td>
-                                <td>29% Commission per delivery order</td>
-                                <td>Maximize sales. Reach customers farthest away on DoorDash—has the largest average delivery radius. Lowest customer delivery fee. Access DashPass members. Get a <strong>CA$50 rebate</strong> when you spend CA$100 or more on marketing every month.</td>
+                                <td>29% commission per delivery order</td>
+                                <td>“Maximize sales” - Reach customers farther away on DoorDash - Has the largest average delivery radius. Lowest customer delivery fee. Access DashPass members who order twice as often and spend 2.5× more. Get a CA$50 rebate when you spend CA$100 or more on marketing every month.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -340,8 +341,7 @@
                 category: "2. Product Knowledge",
                 tags: ["dashpass", "subscription", "retention", "uplift"],
                 content: `
-                    <p>For merchants, DashPass is DoorDash's customer subscription program that makes their business stand out to high-value customers, driving more frequent, larger orders by offering subscribers $0 delivery fees and lower service fees, ultimately increasing merchant revenue, typically seeing at least a <strong>30% uplift within a year</strong>.</p>
-                    <p>Merchants join by selecting DoorDash's Plus or Premier partnership plans, gaining special in-app highlighting to attract loyal DashPass members who spend more and order more often.</p>
+                    <p>For merchants, DashPass is DoorDash's customer subscription program that makes their business stand out to high-value customers, driving more frequent, larger orders by offering subscribers $0 delivery fees and lower service fees, ultimately increasing merchant revenue, typically seeing at least a 30% uplift within a year. Merchants join by selecting DoorDash's Plus or Premier partnership plans, gaining special in-app highlighting to attract loyal DashPass members who spend more and order more often.</p>
                     <h3>Key Benefits for Merchants:</h3>
                     <ul>
                         <li><strong>Increased Sales & Revenue:</strong> DashPass members order more frequently and spend significantly more, with merchants often seeing at least 30% revenue growth.</li>
@@ -357,26 +357,22 @@
                 category: "2. Product Knowledge",
                 tags: ["ads", "sponsored", "sl", "cpa", "roas"],
                 content: `
-                    <p>Sponsored Listings (SLs) allow merchants to advertise their business on the DoorDash marketplace app to boost their visibility and reach new customers. SLs place them near the top of the feed for relevant keywords that are searched (e.g., Pizza in Toronto), as well as select carousels and cuisine types on the DoorDash Homepage.</p>
-                    <p>Placement is determined by <strong>"Business Tags"</strong> and your <strong>"Menu Items"</strong>. These ads are displayed within search results, cuisine filters, homepage carousels, carousel landing pages, pill filters, and the ‘all stores’ feed at the bottom of the homepage.</p>
-                    <h3>Campaign Metrics & Configuration:</h3>
+                    <p>Sponsored Listings - SLs allow merchants to advertise their business on the DoorDash marketplace app to boost their visibility and reach new customers. SLs will place them near the top of the feed for relevant keywords that are searched (e.g. Pizza in Toronto), as well as select carousels and cuisine types on the DoorDash Homepage.</p>
+                    <p>Placement is determined by “Business Tags” and your “Menu Items”. These ads are then displayed within search results, cuisine filters, homepage carousels, carousel landing pages, pill filters, and the ‘all stores’ feed at the bottom of the homepage. The mx would choose their maximum bid price (pay per order) and their max weekly budget (to limit cost/order volume).</p>
                     <ul>
-                        <li>The mx chooses their maximum bid price (pay per order) and their max weekly budget (to limit cost/order volume).</li>
-                        <li><strong>Cost to Mx:</strong> You only pay-per-order ($3 - $12), <strong>not</strong> charged per impressions, views, or clicks (Strict CPA Model).</li>
-                        <li><strong>Expected Results:</strong> Up to 2x impression exposure. Avg <strong>5x ROAS</strong>.</li>
-                        <li><strong>Goal:</strong> New Acquisition + Retention.</li>
+                        <li><strong>Cost to Mx:</strong> You only pay-per-order ($3 - $12), not charged per impressions, views, or clicks.</li>
+                        <li><strong>Expected Results:</strong> Up to 2x impression. Avg 5x ROAS</li>
+                        <li><strong>Goal:</strong> New Acquisition + Retention</li>
                     </ul>
                 `
             },
-{
+            {
                 id: "prod-promotions",
                 title: "Promotions & Smart Campaigns",
                 category: "2. Product Knowledge",
                 tags: ["promotions", "smart", "campaigns", "discount", "bogo", "happy-hour"],
                 content: `
-                    <h2>
-                        <a href="https://merchants.doordash.com/en-ca/learning-center/smart-campaigns" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">Smart Campaigns</a>
-                    </h2>
+                    <h2><a href="https://merchants.doordash.com/en-ca/learning-center/smart-campaigns" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">Smart Campaigns</a></h2>
                     <p>Our newest product offering! Smart campaigns use data and AI to automatically adjust your promotions in real time — so the right customers see the right offer at the right time. DoorDash manages different promotion types in one campaign, helping you save time while boosting performance. Through dynamic discounts and automated targeting, you’ll make the most of your campaigns and reach customers with offers that may be more likely to convert.</p>
                     
                     <h2>Promotion Catalog Matrix</h2>
@@ -390,50 +386,50 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>Spend $X, Get $Y (SxGy)</strong></td>
+                                <td><strong>Spend $X, get $Y (SxGy)</strong></td>
                                 <td>Marketing fee of .99 cents per order this promo generates + the customer discount % or $ amount off that they chose for each order placed.</td>
-                                <td>16% increase in Sales Revenue, 6x ROI. Goal: New Acquisition + Retention.</td>
+                                <td>16% increase in Sales Revenue, 6x ROI. Goal: New Acquisition + Retention</td>
                             </tr>
                             <tr>
-                                <td><strong>Try With Discount (TWD/First Order % Off)</strong></td>
+                                <td><strong>Try With Discount (TWD)</strong></td>
                                 <td>Marketing fee of .99 cents per order this promo generates + the customer discount.</td>
-                                <td>40% increase in Sales. More than 50% repeat visits, 30% more visibility than FO/$0D (DashPass Customers), 7.5x ROI. Goal: New Acquisition.</td>
+                                <td>40% increase in Sales. More than 50% repeat visits, 30% more visibility than FO/$0D (DashPass Customers), 7.5x ROI. Goal: New Acquisition</td>
                             </tr>
                             <tr>
-                                <td><strong>Try Me Free (TMF/First Order, $0 Delivery)</strong></td>
-                                <td>Marketing fee of $4.99 when they acquire a new customer (only on 1st order). Orders must be over $15.</td>
+                                <td><strong>Try Me Free (TMF)</strong></td>
+                                <td>Marketing fee of $4.99 when they acquire a new customer (only on 1st order).</td>
                                 <td>In 6 months, avg 60% increase in sales revenue, 41% growth in new customers, 26% come back to buy again and 7x ROI. Goal: New Acquisition. <em>Note: This promotion is not ideal for Mx’s on DashPass</em></td>
                             </tr>
                             <tr>
-                                <td><strong>DoorDash Deals (DDD/$0 Delivery Fee)</strong></td>
-                                <td>The Mx will pay a fixed marketing fee of $4.99 per order. For non-DashPass customers and non-DashPass Mx.</td>
+                                <td><strong>DoorDash Deals (DDD)</strong></td>
+                                <td>The Mx will pay a fixed marketing fee of $4.99 per order.</td>
                                 <td>Avg 20% increase in store sales revenue. There is a 6x ROI. Goal: New Acquisition + Retention. <em>Note: This promotion is not ideal for Mx’s on DashPass</em></td>
                             </tr>
                             <tr>
-                                <td><strong>Order Again & Save (OAAS/Win-back)</strong></td>
-                                <td>Marketing fee of .99 cents per order this promo generates + the customer discount % or $ they chose for each order placed (e.g. 25% off of a $20 order = $5 + .99 mkt fee = $5.99 total cost). Targets customers inactive for over 6 months.</td>
-                                <td>Avg 17% increase in sales revenue. 6x ROAS. Over 21% won back. Goal: Retention.</td>
+                                <td><strong>Order Again & Save (OAAS)</strong></td>
+                                <td>Marketing fee of .99 cents per order this promo generates + the customer discount % or $ they chose for each order placed.</td>
+                                <td>Avg 17% increase in sales revenue. 6x ROAS. Over 21% won back. Goal: Retention</td>
                             </tr>
                             <tr>
-                                <td><strong>Buy One, Get One (BOGO) (w/o min spend)</strong></td>
-                                <td>Marketing fee of .99 cents per order this promo generates + item offered (cost of goods, not menu price). Item must cost at least $4 and must have a menu photo.</td>
-                                <td>19% increase in sales, 10% increase in impressions, 3X ROI. Goal: New Acquisition + Retention. <em>Note: Best items to promote are high profit, new, or popular items with positive reviews.</em></td>
+                                <td><strong>Buy One, Get One (BOGO)</strong></td>
+                                <td>Marketing fee of .99 cents per order this promo generates + item offered (cost of goods, not menu price).</td>
+                                <td>19% increase in sales, 10% increase in impressions, 3X ROI. Goal: New Acquisition + Retention. Item must cost at least $4 and have a photo.</td>
                             </tr>
                             <tr>
                                 <td><strong>Free Item (w/min spend)</strong></td>
                                 <td>Marketing fee of .99 cents per order this promo generates + item offered.</td>
-                                <td>19% increase in sales, 3x ROI. Goal: New Acquisition + Retention.</td>
+                                <td>19% increase in sales, 3x ROI. Goal: New Acquisition + Retention</td>
                             </tr>
                             <tr>
-                                <td><strong>Happy Hour (% off or item discount)</strong></td>
-                                <td>Marketing fee of .99 cents per order this promo generates + the customer discount % or item discount they chose for each order placed. Restricts volume between 2pm - 5pm.</td>
-                                <td>33% sales lift during Happy Hour (2pm - 5pm), 6% overall sales lift, 87% of Happy Hour sales lift is incremental. Goal: New Acquisition + Retention + Order Volume. <em>Note: If discounting items, DoorDash automatically selects 10 customer favorites.</em></td>
+                                <td><strong>Happy Hour</strong></td>
+                                <td>Marketing fee of .99 cents per order this promo generates + the customer discount % or item discount.</td>
+                                <td>33% sales lift during Happy Hour (2pm - 5pm), 6% overall sales lift, 87% of lift is incremental. Goal: New Acquisition + Retention + Order Volume.</td>
                             </tr>
                         </tbody>
                     </table>
                 `
             },
-{
+            {
                 id: "prod-store-loyalty",
                 title: "Store Loyalty",
                 category: "2. Product Knowledge",
@@ -441,23 +437,14 @@
                 content: `
                     <p>Loyalty program that allows customers to earn rewards ($ off) after they spend over a certain threshold with the Mx.</p>
                     <p><strong>Cost to Mx:</strong> No marketing fee. Only cost to Mx is the value of the reward once redeemed by the customer.</p>
-                    <p><strong>Expected Results / Goal:</strong> New Acquisition + Retention + Order Volume: 4% increase in sales and 6% lift in order frequency within 8 weeks of enrolling. Simultaneously benefit from running Store Loyalty on Marketplace while offering your own Loyalty program for in-store / native channels.</p>
-                    <blockquote>
-                        <em>“While Ads and new customer acquisition promos bring new customers in the door, Store Loyalty is the way to get customers coming back for their 2nd, 3rd and 4th orders. Store Loyalty is also the perfect complement to Sponsored Listings and Promotions.”</em>
-                    </blockquote>
+                    <p><strong>Goal & Expected Results:</strong> New Acquisition + Retention + Order Volume: 4% increase in sales and 6% lift in order frequency within 8 weeks of enrolling. Simultaneously benefit from running Store Loyalty on Marketplace while offering your own Loyalty program for in-store / native channels.</p>
                     
                     <h2>Store Loyalty Rewards - Known Self-Serve Enrollment Issue</h2>
                     <p>Mx must have Business Admin access to enroll in Store Loyalty; however, there currently exists an issue for some Merchants where they will be unable to self-serve enroll into the Loyalty program even with Business Admin access.</p>
-                    
-                    <h3>Troubleshooting Steps:</h3>
-                    <ol>
-                        <li>First, have the Merchant try to enroll in the program from a Desktop/Laptop computer using Google Chrome as their browser, as this sometimes fixes the issue.</li>
-                        <li>If the Mx is still unable to enroll, please flag the Business ID to your Team Lead.</li>
-                        <li>If a store has previously moved from a Business ID with an active Loyalty program to another Business ID, it creates an error on the backend that must be removed manually by the DoorDash team. Our team here can check the Store Change History in our admin tool <strong>MINT</strong> to look for this.</li>
-                    </ol>
-                    
-                    <p style="margin-top: 1.5rem;">
-                        👉 <a href="https://doordash.enterprise.slack.com/archives/C017A7DBNLU/p1756923230445019" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">#mx-ads-promos-loyalty-sales-questions</a> is the channel for these escalations.
+                    <p>First, have the Merchant try to enroll in the program from a Desktop/Laptop computer using Google Chrome as their browser, as this sometimes fixes the issue.</p>
+                    <p style="margin-top: 1rem;">
+                        👉 If the Mx is still unable to enroll, please flag the Business ID to your Team Lead. If a store has previously moved from a Business ID with an active Loyalty program to another Business ID, it creates an error on the backend that must be removed manually. Our team here can check the Store Change History in our admin tool MINT to look for this. Escalation channel: 
+                        <a href="https://doordash.enterprise.slack.com/archives/C017A7DBNLU/p1756923230445019" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">#mx-ads-promos-loyalty-sales-questions</a>.
                     </p>
                 `
             },
@@ -469,55 +456,35 @@
                 tags: ["process", "funnel", "reciprocity", "trust"],
                 content: `
                     <p>Think of your “order of operation” as this sales funnel or journey that you take your Mx through to seamlessly build trust as you influence them to adopt multiple product offerings over time.</p>
-                    <p>Most MSMs find that there is less “sales resistance” from the Mx if you start the relationship by offering help in areas that don’t result in additional fees for the Mx, such as photos or videos. This can be a low risk way of building rapport and credibility by leveraging the <strong>law of reciprocity</strong>.</p>
+                    <p>Most MSMs find that there is less “sales resistance” from the Mx if you start the relationship by offering help in areas that don’t result in additional fees for the Mx, such as photos or videos. This can be a low risk way of building rapport and credibility by leveraging the law of reciprocity.</p>
                     <blockquote>
-                        <strong>The Law of Reciprocity:</strong> The idea that people feel obligated to return a favor when someone does something for them. It's a social psychology principle that can be applied in many situations, including personal relationships, business, and sales.
+                        <strong>The law of reciprocity:</strong> The idea that people feel obligated to return a favor when someone does something for them. It's a social psychology principle that can be applied in many situations, including personal relationships, business, and sales.
                     </blockquote>
                     <p>Achieving the first “yes” as a sales consultant is usually the most difficult one. Afterward, mxs are significantly more likely to be open to other suggestions that you may have.</p>
-                    <h3>The Progressive Value Funnel:</h3>
-                    <p><code>Menu Improvement (photos + videos + menu desc) —&gt; New Cx Acquisition (A&P)</code></p>
+                    <p><strong>Funnel Alignment Matrix:</strong> Menu Improvement (photos + videos + menu desc) &gt; New Cx Acquisition (A&P)</p>
                 `
             },
             {
                 id: "sales-pre-call-research",
                 title: "Pre-Call Research",
                 category: "3. Sales & Support Process",
-                tags: ["research", "efficiency", "sl_opp", "promo_opp", "navigation"],
+                tags: ["research", "efficiency", "sl_opp", "promo_opp"],
                 content: `
                     <p>The purpose of pre-call research is to build an agenda so that you sound prepared for your call with the mx. It’s also important to be efficient with your pre-call research time. You do not want to spend 10 minutes researching an account, just for the DM to not answer. A reasonable amount of time for pre-call research is between <strong>2-3 minutes</strong>.</p>
-                    
-                    <h3>1. Time Zones</h3>
-                    <p>Please check the time zone the merchant is in, and compare it to your time zone in CR (Costa Rica). This ensures that you’re calling during appropriate business hours which correlate with the most DM connects.</p>
-                    
-                    <h3>2. Opportunity Size (BoB Mapping Columns)</h3>
-                    <p>Sorting your BoB by opportunity size will allow you to measure which merchants could have the biggest potential impact on your quota:</p>
+                    <h3>Research Dimensions Checklist:</h3>
                     <ul>
-                        <li><code>SL_OPP</code>: This is a binary 1/0 where a 0 means there is no ads opportunity (ad is already active) and 1 means there is an open opportunity.</li>
-                        <li><code>PROMO_OPP</code>: This is a binary 1/0 where a 0 means there is no promo opportunity and 1 means there is an open opportunity.</li>
+                        <li><strong>Time Zones:</strong> Please check the time zone the merchant is in, and compare it to your time zone in CR. This will allow you to ensure that you’re calling during the appropriate business hours which are correlated with the most DM connects.</li>
+                        <li><strong>Opportunity Size:</strong> Sorting your BoB by opportunity size will allow you to measure which merchants could have the biggest potential impact on your quota. Check these exact binary tracking tags:
+                            <br><code>SL_OPP</code> - Binary 1/0 where 0 means no ads opportunity (active ad running) and 1 means open opportunity.
+                            <br><code>PROMO_OPP</code> - Binary 1/0 where 0 means no promo opportunity and 1 means open opportunity.
+                        </li>
+                        <li><strong>Campaign Reporting Navigation:</strong> Log in to Mx Portal → Click on Marketing → Campaign Reporting. Best used to validate current marketing metrics. Note: Sigma scales update once per week; look directly here before forming baseline pitch assumptions.</li>
+                        <li><strong>Sales Trends Navigation:</strong> Log in to Mx Portal → Click on Insights → Sales. Look for green or red arrows indicating percentage changes.</li>
+                        <li><strong>Customer Insights Navigation:</strong> Log in to Mx Portal → Click on Customers → Customer Insights. Helps segment users into New, Occasional, or Frequent brackets.</li>
                     </ul>
-
-                    <h3>3. Identifying DM Contact Info</h3>
-                    <p>The DM’s name and direct number are listed in your BoB / Lead List. If the phone number field is missing, check alternate locations inside SFDC:</p>
-                    <ul>
-                        <li>MXP Cases</li>
-                        <li>Merchant Portal</li>
-                        <li>Google search / AskDataAI</li>
-                    </ul>
-
-                    <h3>4. Campaign Reporting Navigation</h3>
-                    <p>Used to see current marketing performance and validate active metrics. Note: The Sigma view your BoB lives on only updates once per week. Review the Campaign Reporting tab before making assumptions.</p>
-                    <p><code>Navigation: Log in to Mx Portal —&gt; Click on Marketing —&gt; Campaign Reporting</code></p>
-                    
-                    <h3>5. Sales Trends & Insights</h3>
-                    <p>Measure performance over daily, weekly, or monthly periods to spot positive green or negative red percentage arrows.</p>
-                    <p><code>Navigation: Log in to Mx Portal —&gt; Click on Insights —&gt; Sales</code></p>
-
-                    <h3>6. Customer Insights</h3>
-                    <p>Identify customer distribution types (New, Occasional, Frequent) to construct your tailored store alignment pitch.</p>
-                    <p><code>Navigation: Log in to Mx Portal —&gt; Click on Customers —&gt; Customer Insights</code></p>
                 `
             },
-{
+            {
                 id: "sales-intro-call",
                 title: "Intro Call & Pitching Scripts",
                 category: "3. Sales & Support Process",
@@ -525,7 +492,6 @@
                 content: `
                     <h2>Introductory Call Script Framework</h2>
                     <p><em>"Hi this is [your name] calling on behalf of DoorDash on a recorded line for training and quality purposes, is [DM name] available? Hi [DM name], I wanted to quickly introduce myself today as your Account Manager. My job is to identify opportunities for both sales growth and operational health. I was reviewing your account and noticed..."</em> (Insert one of the custom value props below):</p>
-                    
                     <h3>Value Proposition Options:</h3>
                     <ul>
                         <li><strong>Missing Elements Hook:</strong> "Customers have flagged several missing photos/descriptions from your menu. I’m curious, when was the last time you had a photoshoot for your menu items or made changes to your descriptions?"</li>
@@ -537,66 +503,34 @@
                 `
             },
             {
-                id: "sales-photos-descriptions",
-                title: "Sales Process: Photos & Menu Descriptions",
+                id: "sales-quality-metrics",
+                title: "Quality Metrics",
                 category: "3. Sales & Support Process",
-                tags: ["photos", "menu", "descriptions", "diy", "mxp", "elevator"],
+                tags: ["metrics", "photos", "videos", "operations", "quality"],
                 content: `
-                    <h2>Menu Photos Fulfillment Tracks</h2>
-                    <p>Ask: <em>"Have you had your courtesy professional photoshoot yet? Back when you initially on-boarded on our platform?"</em> Check SFDC cases/work orders to confirm.</p>
+                    <p style="margin-bottom: 1.5rem;">
+                        👉 <a href="https://docs.google.com/document/d/1v9kZ3xaJYu6RusK5tRaeeOHVnLvQXe0GV6V5fGaO51Y/edit?tab=t.0#heading=h.3r2szkvo7kq3" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">Mx Videos Playbook: MSM IG Integration Script/Playbook</a>
+                    </p>
+                    <h2>Menu Photos</h2>
+                    <p>Have you had your courtesy professional photoshoot yet? Back when you initially on-boarded on our platform. (If uncertain, allow me to check on that for you in SFDC cases/work orders).</p>
                     <ul>
-                        <li><strong>If No:</strong> <em>"I can submit a case today, to get one scheduled at no cost to you."</em></li>
-                        <li><strong>If Yes:</strong> <em>"Have you ever tried uploading these photos into your merchant portal in the past?"</em> Deploy the tracking options below:</li>
+                        <li><strong>If No:</strong> I can submit a case today, to get one scheduled at no cost to you.</li>
+                        <li><strong>If Yes:</strong> Have you ever tried uploading these photos into your merchant portal in the past?</li>
                     </ul>
-                    
-                    <h3>Fulfillment Options Matrix:</h3>
+                    <h3>Fulfillment Paths:</h3>
                     <ul>
-                        <li><strong>Option 1 (DIY):</strong> <em>"Do you have access to a nearby computer? I can walk you through how to get these photos uploaded into the merchant portal today."</em></li>
-                        <li><strong>Option 2 (MXP):</strong> <em>"I’ll create a case to have our MXPs upload the photos for you."</em></li>
-                        <li><strong>Option 3 (MSM):</strong> <em>"If you don’t mind, send me an email with all of your menu item photos along with the name of the item and I can upload them on your behalf."</em></li>
+                        <li><strong>Option 1 DIY:</strong> Do you have access to a nearby computer? I can walk you through how to get these photos uploaded into the merchant portal today.</li>
+                        <li><strong>Option 2 MXP:</strong> I’ll create a case to have our MXPs upload the photos for you.</li>
+                        <li><strong>Option 3 MSM:</strong> If you don’t mind, send me an email with all of your menu item photos along with the name of the item and I can upload them on your behalf.</li>
                     </ul>
-
                     <h3>Elevator Pitch: Menu Photos</h3>
                     <blockquote>
-                        <em>"Photos play a huge role in how customers order their food on the DoorDash app. This is especially true for those new customers. They have no idea what your food tastes like and they need to see it, before they spend their hard earned money with you. As you know, most people are visual. They eat with their eyes before they eat with their mouth. So it’s important that we make sure all of your menu items have adequate photo coverage. Does that make sense?"</em>
+                        "Photos play a huge role in how customers order their food on the DoorDash app. This is especially true for those new customers. They have no idea what your food tastes like and they need to see it, before they spend their hard earned money with you. As you know, most people are visual. They eat with their eyes before they eat with their mouth. So it’s important that we make sure all of your menu items have adequate photo coverage. Does that make sense?"
                     </blockquote>
-
-                    <h3>Objection Handling:</h3>
-                    <p><strong>Mx:</strong> <em>"I don’t want to do a photoshoot because then all of my food will go to waste afterwards."</em></p>
-                    <p><strong>Rebuttal:</strong> <em>"I understand this concern, however, I have talked to other merchants who found the lifetime value of new customers who will order because of these photos is greater than the one time food cost for each dish."</em></p>
-                `
-            },
-            {
-                id: "sales-ap-upsell",
-                title: "Sales Process: Ads & Promos (A&P)",
-                category: "3. Sales & Support Process",
-                tags: ["ap", "upsell", "ads", "discovery", "cpa", "evergreen"],
-                content: `
-                    <h2>Transition Talk Track (A&P Upsell)</h2>
-                    <p><em>"Now that we’ve got your new photos/videos/menu changes submitted; that’s the first step towards ensuring your long term success on our platform. The second step that our most successful merchants do, is to also run ads/promos with it. We need to get these beautiful menu photos in front of as many potential customers as possible. And running [insert promo / SL] is the best way to make that happen."</em></p>
-                    
-                    <h2>A&P Discovery Questions</h2>
-                    <ul>
-                        <li>What do you currently do today to promote your business and attract new customers?</li>
-                        <li>How do you get your business to stand out amongst your competitors?</li>
-                        <li>Have you ever advertised your business, either online or in-person? What was the outcome and how did you measure success?</li>
-                        <li>What other 3rd party delivery companies do you use? How does your order volume on DoorDash compare to them?</li>
-                        <li>Are you more interested in attracting new customers, retaining existing customers, or both?</li>
-                    </ul>
-
-                    <h2>Sponsored Listings Pitch</h2>
-                    <p><em>"Sponsored listings is our ad service that will target customers who are actively looking for your specific type of food on our app. So if someone searches for [insert cuisine type] in the [insert location] area, this will boost your visibility by putting your brand front and center on the DoorDash app, helping you attract more customers."</em></p>
-                    
-                    <h3>What Sets DoorDash Ads Apart (Crucial Note):</h3>
-                    <p>We run on a <strong>CPA (cost per acquisition)</strong> model, whereas competitors run on a CPC (cost per click) model. This allows us to be much more efficient while also being more budget-friendly.</p>
-                    <p>The best part about advertising on DoorDash, compared to any other platform, is we don’t charge for clicks, impressions, or views. We only charge after a customer places an order with your store as a direct result of your ad. Does that make sense?</p>
-
-                    <h3>Structural Pillars for the Pitch:</h3>
-                    <ul>
-                        <li><strong>Duration (Evergreen):</strong> Our most successful merchants run evergreen campaigns, that way if it's performing well and exceeding your goals, it won't automatically shut off. This allows the campaign to fully optimize.</li>
-                        <li><strong>Budget Recommendations:</strong> We advise going with the recommended budget provided in the Merchant Portal, as this takes into account your daily sales, orders, and average order value.</li>
-                        <li><strong>Bid Strategy (Auto-Bidding):</strong> Over 90% of campaigns are set to auto-bidding. This ensures you never pay more than you have to for an order while remaining competitive.</li>
-                    </ul>
+                    <h2>Operations Quality - A measure of each Mx's customer experience</h2>
+                    <p>Operations Quality can be a great starting point to see how a Mx is performing on DoorDash. There are multiple types of quality metrics, from things like <strong>Order Accuracy</strong> (how many customers are reporting missing/incorrect items) to <strong>Wait Time</strong> (how long do Dashers wait for the food to be ready upon arrival). For every quality metric we set a goal for each store to hit based on the average yearly performance of the top 20% of merchants on DoorDash.</p>
+                    <h2>Most Loved Program</h2>
+                    <p>The Most Loved program recognizes and rewards the top-rated and most reliable merchants on DoorDash. For Mx who hit all the goals outlined by the program, they will have better visibility (featured in the homepage Most Loved carousel) and recognition (a Most Loved store banner).</p>
                 `
             },
             {
@@ -606,350 +540,151 @@
                 tags: ["objections", "rebuttals", "margins", "dayparting"],
                 content: `
                     <h2>Objection Handling Matrix</h2>
+                    <h3>"This sounds too expensive/I will lose money on my orders."</h3>
+                    <p><strong>Rebuttal:</strong> <em>"I understand your concern. However, what’s great about our marketing is that you don’t pay a dime until you receive actual business from us. Our marketing products and commission packages are designed to bring you incremental revenue to add value to your business, not lose you any money."</em> → Move into incremental order margins breakdown (30/30/30/10).</p>
+                    <h3>"I’m already doing this on Google/Facebook/Instagram and/or UberEats."</h3>
+                    <p><strong>Rebuttal:</strong> <em>"That’s great! Keep in mind, these tend to be two completely different sets of customer bases. With social media, your ad can be served to anyone. On DoorDash, your ad is only being served to customers who are hungry and actively looking for dining options. In addition to this, we can be much more efficient and effective because we do not charge for clicks, views, or impressions. We only charge when your ad actually leads to an order from your store."</em></p>
+                    <h3>"The bid price is too high, there is no way I can afford that."</h3>
+                    <p><strong>Rebuttal:</strong> <em>"I totally understand where you’re coming from. First off, the average bid price falls between $3-$4. If you’re reading $12 it’s because for certain high-density locations it could get that high, but it’ll never exceed it. Automatic bidding will optimize your budget by minimizing your bid amounts and maximizing your return. In addition, once your budget is used for the week, your ad will be turned off until the following week, helping to control costs."</em></p>
+                    <h2>Dayparting (SL’s & Promos)</h2>
+                    <p>Dayparting is the action we take which puts limitations on when a Sponsored Listing or promotion shows as available to a customer. We can take advantage of dayparting to help drive more business to a store during their slower hours, or if a Mx lacks interest in having campaigns consistently running.</p>
+                    <p><em>Example:</em> A Mx has enough traffic and order volume during dinner hours, but lacks volume during lunch. We can offer to daypart their campaigns so that they are only running during lunch hours, but automatically turn off before the dinner rush hits.</p>
+                `
+            },
+            {
+                id: "contact-strategy-cadence",
+                title: "Contact Strategy & Outreach Cadence",
+                category: "3. Sales & Support Process",
+                tags: ["cadence", "etiquette", "compliance", "buffer"],
+                content: `
+                    <p>Mxs have provided extensive feedback regarding excessive rep outreach. To maintain high Mx satisfaction, improved quality touches, and allocation of rep time, the following outreach cadence must be adhered to at a minimum:</p>
+                    <h2>Mx Outreach Etiquette Rules:</h2>
+                    <ol>
+                        <li><strong>Daily Limit:</strong> There should be no more than 3 touches per Mx in a single day, inclusive of both emails and calls. Reps should only make <strong>2 calls and send 1 email maximum per day</strong>. For example, if a rep calls in the morning and cannot reach the DM, they can send one email and attempt to reach the DM one more time within that working day.</li>
+                        <li><strong>Intraday Buffer:</strong> In situations where a rep is conducting outreach to an Mx twice in a single day, outreach must be spaced throughout the day (<strong>minimum 4-6 hour buffer</strong> before conducting a second outreach).</li>
+                        <li><strong>Weekly Spacing:</strong> Outreach to any single Mx must be spaced gradually over the course of a week. If a rep has contacted an Mx already without response, reps must wait a <strong>minimum of 24 hours</strong> prior to conducting another outreach (i.e., reps should not be contacting the same Mx every day). Be mindful of automated drip timelines.</li>
+                    </ol>
+                `
+            },
+            {
+                id: "sales-voicemails-emails",
+                title: "Voicemails, Emails & Signature",
+                category: "3. Sales & Support Process",
+                tags: ["voicemail", "email", "signature", "outreach", "sequences"],
+                content: `
+                    <h2>Voicemails</h2>
+                    <p>The purpose of leaving voicemails is to entice Mx’s to call you back. You should not be leaving a voicemail with a full sales pitch. Just introduce yourself, leave a quick value prop to pique their interest and then request a callback.</p>
                     
-                    <h3>1. "This sounds too expensive/I will lose money on my orders."</h3>
-                    <p><strong>Rebuttal:</strong> <em>"I understand your concern. However, what’s great about our marketing is that you don’t pay a dime until you receive actual business from us. Our marketing products and commission packages are designed to bring you incremental revenue to add value to your business, not lose you any money."</em> (Move instantly into the <strong>30/30/30/10 incremental order margins breakdown</strong>).</p>
+                    <h2>Emails</h2>
+                    <p>The purpose of sending emails is to set up a time for a scheduled appointment. The content within your email (especially pre-pitch) should be brief: <strong>Intro &gt; Value prop &gt; CTA (call to action)</strong>.</p>
                     
-                    <h3>2. "I’m already doing this on Google/Facebook/Instagram and/or UberEats."</h3>
-                    <p><strong>Rebuttal:</strong> <em>"That’s great! Keep in mind, these tend to be two completely different sets of customer bases. With social media, your ad can be served to anyone. On DoorDash, your ad is only being served to customers who are hungry and actively looking for dining options right now. Plus, those networks bill you per click; we only charge when your ad translates directly to a completed order."</em></p>
+                    <h2>How to send an Outreach sequence:</h2>
+                    <ol>
+                        <li>Go to Outreach. Click on <strong>'Prospects'</strong>.</li>
+                        <li>Remove filter "Owner is you".</li>
+                        <li>Click <strong>"Add Filter"</strong> and type in/select <strong>"Tags"</strong>.</li>
+                        <li>In the pop up window, type in the proper drip tag, select your tag and click "Done". This will update the prospect list.</li>
+                        <li>Click the checkbox next to "Name" to select all prospects.</li>
+                        <li>Click <strong>"Sequence"</strong>, search for your desired sequence, and click <strong>"Add to sequence"</strong>.</li>
+                    </ol>
                     
-                    <h3>3. "The bid price is too high, there is no way I can afford that."</h3>
-                    <p><strong>Rebuttal:</strong> <em>"I totally understand. First off, the average bid price falls between $3-$4. If you’re reading $12 on your screen, it’s because for certain high-density zones it could get that high, but it will never exceed it. We actually recommend leaving it on Automatic bidding. It programmatically minimizes your bid amounts while maximizing your return. Once your budget floor is reached for the week, the ad automatically sleeps so you are always in control."</em></p>
-
-                    <h2>Dayparting (SLs & Promos)</h2>
-                    <p>Dayparting is the action we take which puts limitations on when a Sponsored Listing or promotion shows as available to a customer. We take advantage of dayparting to help drive more business to a store during slower hours, or if a Mx lacks interest in running campaigns consistently.</p>
+                    <h2>Required Email Signature Configuration</h2>
+                    <div class="signature-box">
+                        <strong>[Insert Rep Name]</strong><br>
+                        Merchant Success Manager<br>
+                        (000) 000-0000<br>
+                        0:00AM-0:00PM PT (Mon-Fri)<br>
+                        DoorDash.com<br><br>
+                        <span style="color:#ff3008; font-weight:bold; text-decoration:underline;">Schedule time to chat here</span>
+                    </div>
+                `
+            },
+            {
+                id: "sales-pipeline-management",
+                title: "Pipeline Management",
+                category: "3. Sales & Support Process",
+                tags: ["pipeline", "leads", "target", "sprint"],
+                content: `
+                    <p>To strategically oversee and optimize your leads - we need to track and analyze the progress of our leads, opportunities or tasks involved from initial contact through CW/CL. Effective pipeline management includes the following activities:</p>
+                    <ul>
+                        <li><strong>Pre-Call Check and Review:</strong> Understanding your leads by checking the merchant portal for recent sales, customer, or marketing trends, number of locations, and opportunities within the business. This helps you set a strategic agenda. Check SFDC for historical logs.</li>
+                        <li><strong>First Outreach Strategy:</strong> Calling your merchant should always be your go-to call to action if you want to optimize your leads. <strong>Call the first 30 leads in your pipeline daily</strong>. Recommended cadence is to call in the morning and evening, combined with personalized emails and automated drips.</li>
+                        <li><strong>Follow Up Cadence:</strong> Setting strong follow-ups creates a pipeline of potential Mx’s we can contact in the coming days. This ensures that we have a sufficient number of Mx’s to pitch each day.</li>
+                        <li><strong>Updating Activities:</strong> Whether in SFDC or in your GSheet, make sure you are updating your leads and leaving detailed notes. This makes next steps and follow-up calls cleaner.</li>
+                    </ul>
                     <blockquote>
-                        <strong>Example Scenario:</strong> A merchant has plenty of volume during dinner hours but sits empty during lunch. They are hesitant to run a promo across the entire day because they cannot handle additional weekend peak volume. 
-                        <br><br>
-                        <strong>Solution:</strong> Offer to daypart their campaigns so they run exclusively during lunch hours and automatically shut off before the dinner rush begins.
+                        The success of this program, team, and rep depends on how we ensure that we have enough pipeline to call and/or email for every specific metric and KPI. Not having a good pipeline and poor management of leads can lead to a loss of chances to close a CW.
                     </blockquote>
                 `
             },
             {
-                id: "sales-cross-functional",
-                title: "Working Cross-Functionally",
+                id: "sales-account-owner-changes",
+                title: "Account Owner Changes",
                 category: "3. Sales & Support Process",
-                tags: ["cross-functional", "mxp", "escalations", "support", "sla"],
+                tags: ["account", "owner", "changes", "slack", "workflow"],
                 content: `
-                    <p>Meeting communication expectations has a direct impact on team culture, productivity, and vendor-to-onshore partnerships.</p>
-                    
-                    <h2>Working with MXPs (Merchant Support Partners)</h2>
-                    <p>Assigned MXPs can be located via SFDC (Figment) on the Parent Level/Business Page under "Account Team" or via the MXP Coverage Status Sigma Dashboard.</p>
-                    
-                    <h3>Common MXP Request Routing:</h3>
+                    <p>Vendor Teams will submit requests to Team Leads who will then submit any account change requests using the account change Slack Workflow. Information will be provided on the Mx name, business ID, store name, and store ID. The requester will also include information on why this is being requested. <strong>Requests will not be accepted directly from reps</strong>, they must be escalated through Team Leads.</p>
+                    <p>Sales S&O will review Account Change requests every 2 weeks and make updates as approved.</p>
+                    <h3>Account changes can be requested in the below instances:</h3>
                     <ul>
-                        <li>Payout issues or banking discrepancies</li>
-                        <li>Order cancellation escalations & Change of Ownership (COO)</li>
-                        <li>Tablet, Printer, POS integration mechanical errors</li>
-                        <li>Merging or grouping multi-location accounts</li>
-                        <li>Pricing plan alterations for corporate multi-locations</li>
+                        <li>An AO owns an existing account and the Mx has requested that the same AO manage additional accounts.</li>
+                        <li>The Mx speaks a different language than the AO.</li>
+                        <li>The Mx is not a restaurant.</li>
                     </ul>
-
-                    <h3>What if an MXP is not assigned to the Business ID?</h3>
-                    <p>Create an <strong>AM Case in DDMx</strong>. The case will auto-route to the <code>MXP-SMB Queue</code>.</p>
+                    <h3>Account changes will be denied in the below instances:</h3>
                     <ul>
-                        <li><strong>P0 Categories</strong> (Fraud, Store Status, COO, Payments): SLA is <strong>15 hours</strong>.</li>
-                        <li><strong>P1/P2 Categories</strong> (Business Merge, etc.): SLA is <strong>48 hours</strong>.</li>
-                        <li>If a case goes unresolved past the SLA window, send a direct Slack message to the assigned MXP. If they remain unresponsive for 24 hours, have your TL escalate to <code>#mss-mxp--urgent-requests-and-escalations</code>.</li>
+                        <li>A Mx has closed for reasons outside of our control (uncontrollable churn is adjusted for at the end of the quarter).</li>
+                        <li>A Mx uses vulgar language.</li>
+                        <li>A Mx does not respond to communication.</li>
+                        <li>A Mx states they do not want to run any campaigns.</li>
                     </ul>
-
-                    <h3>MSM &lt;&gt; MXP Best Practices:</h3>
-                    <ol>
-                        <li>Always create a formal system case first before sending a Slack ping.</li>
-                        <li>Leave granular detail and clear documentation inside the case notes to ensure quicker resolution cycles.</li>
-                    </ol>
                 `
             },
             {
-                id: "sales-fraud-inquiries",
-                title: "Handling Fraud Inquiries",
+                id: "sales-new-store-expansion",
+                title: "New Store Expansion (NSE)",
                 category: "3. Sales & Support Process",
-                tags: ["fraud", "escalations", "customer", "dasher", "merchant"],
+                tags: ["nse", "hierarchy", "grandparent", "business-id"],
                 content: `
-                    <p>There are three distinct classifications of fraud across the marketplace ecosystems. Use the routing matrices below:</p>
-                    
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Fraud Channel</th>
-                                <th>Slack Channel</th>
-                                <th>Escalation Path & Requirements</th>
-                                <th>SLA</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Customer (Cx) Fraud</strong></td>
-                                <td><code>#ask-cx-fraud</code></td>
-                                <td>Submit via SFDC / THQ —&gt; Cx Fraud Escalations queue. Include Cx ID, summary of behavior (refund/promo abuse), and examples.</td>
-                                <td>24 Hours</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Dasher (Dx) Fraud</strong></td>
-                                <td><code>#ask-dx-fraud</code></td>
-                                <td>Submit via SFDC / THQ —&gt; Dx Fraud Escalations queue. Include Dasher ID, Delivery IDs, and specific pattern observed (geospoofing/collusion).</td>
-                                <td>24 Hours</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Merchant (Mx) Fraud</strong></td>
-                                <td><code>#ask-mx-fraud</code></td>
-                                <td>Submit via SFDC / THQ —&gt; Mx Fraud Investigations or DDMX - Mx Fraud Investigations. Include Merchant ID, description of account takeover (ATO) or structural abuse signs.</td>
-                                <td>24 Hours</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h2>How do Mx add another store on DoorDash?</h2>
+                    <p>In the Merchant Portal, have the Mx select their store or business name dropdown icon (^), and then click on <strong>“Add store or business”</strong>.</p>
+                    <p>The Mx will be guided through an onboarding experience to complete setting up their new store, or new business concept. They will be able to track the onboarding status of the new store.</p>
+                    <p><strong>Please note:</strong> If the Merchant is not the decision maker for all locations under the Business ID (i.e. they are not the “Business Admin”) please have an MXP case created to move their stores to a different Business ID not associated with any other stores. We can still provide the Mx access to all locations they own with one email login under a <strong>“Business Group ID” (Grandparent Account)</strong> created by an MXP.</p>
+                    <h3>Marketplace Account Hierarchy Protocol:</h3>
+                    <p><code>Business Group &gt; Business ID &gt; Store ID</code></p>
+                    <h3>Setting up a proper account hierarchy helps us maintain:</h3>
+                    <ul>
+                        <li><strong>Account Security:</strong> Merchants will not have access to stores/accounts they should not.</li>
+                        <li><strong>Proper Permissions:</strong> Merchants should be able to enroll in all our products and services.</li>
+                        <li><strong>Ease of Navigation:</strong> Merchants will be able to access all accounts from one (1) login.</li>
+                        <li><strong>Organized Assignment:</strong> Merchants prefer to have one (1) assigned AO across concepts.</li>
+                    </ul>
                 `
             },
             {
-                id: "sales-qa-scorecards",
-                title: "QA Scorecards & ZTP Policy",
+                id: "sales-change-of-ownership",
+                title: "Change of Ownership (COO)",
                 category: "3. Sales & Support Process",
-                tags: ["qa", "scorecard", "drivers", "ztp", "compliance"],
+                tags: ["coo", "sscoo", "portal", "learning-center"],
                 content: `
-                    <p>Our QA scoring model directly reflects our modern sales loop. Review the active structure below:</p>
-                    
-                    <h3>1. Drivers</h3>
-                    <p>Each milestone of the sales interaction has an explicitly defined "driver". This contains descriptions allowing the QA associate to accurately grade a seller's capability in a live dialogue scenario.</p>
-                    
-                    <h3>2. Tiered Ratings System</h3>
-                    <p>Instead of an arbitrary 1-10 slider, the matrix uses a simplified 2-3 tier framework to minimize variance among evaluators:</p>
-                    <ul>
-                        <li><code>Did not demonstrate</code></li>
-                        <li><code>Partially Demonstrated</code> (Used for nuanced sections like Discovery)</li>
-                        <li><code>Effectively Demonstrated</code></li>
-                    </ul>
-
-                    <h3>3. Point Allotment Rationale</h3>
-                    <p>Points are weighted based on milestone importance. High difficulty blocks are allocated more weight. Conversely, negative behaviors that harm merchant health carry heavy penalties.</p>
-
-                    <h3>4. Zero Tolerance Policy (ZTP)</h3>
-                    <p>ZTP flags cover critical execution errors common among low performers where a simple point deduction is insufficient to deter the behavior. <strong>Violating a ZTP results in an automatic 0 on the entire QA Scorecard</strong>, which can directly impact partner compensation metrics on the BPO side.</p>
-                `
-            },
-            // CATEGORY 4: SYSTEM USER GUIDES
-            {
-                id: "sys-requesting-perms",
-                title: "Requesting System Permissions",
-                category: "4. System User Guides",
-                tags: ["permissions", "raven", "sfdc", "outreach", "chorus"],
-                content: `
-                    <h3>Automated Bulk Assignments</h3>
-                    <p>Permissions for <strong>Outreach</strong>, <strong>Chorus</strong>, and <strong>Salesforce DDMx</strong> are submitted directly in automated bulk arrays via BizApps by your Team Lead or Manager. No manual agent action is required.</p>
-                    
-                    <h3>Merchant Portal Manual Raven Setup</h3>
-                    <p>Every new Account Manager must submit <strong>two separate Raven requests</strong>. Splitting sensitive and non-sensitive configurations ensures requests are not rejected by IT security:</p>
-                    
-                    <blockquote>
-                        <strong>Ticket 1: Sensitive Permissions Token Array</strong>
-                        <br><em>Summary:</em> Permissions Request
-                        <br><em>Justification:</em> Required to perform role. I need access to the merchant portal to walk partners through SSMO for A&P, upload photos on behalf of accounts, and edit menu configurations.
-                        <br><em>Raven Type:</em> Sensitive
-                        <br><em>Tokens:</em> <code>Perm_manage_business_dashboard_view</code>, <code>Perm_edit_menu</code>, <code>perm_merchant_reports</code>
-                    </blockquote>
-
-                    <blockquote>
-                        <strong>Ticket 2: Non-Sensitive Permissions Token Array</strong>
-                        <br><em>Summary:</em> Permissions Request
-                        <br><em>Justification:</em> Required to perform role. Standard storefront settings review and profile audit capabilities.
-                        <br><em>Raven Type:</em> Non-Sensitive
-                        <br><em>Tokens:</em> <code>Perm_view_store_settings</code>, <code>perm_always_allow_admin_gateway_access</code>, <code>perm_view_business</code>, <code>perm_view_email</code>, <code>perm_view_financial_info</code>, <code>perm_view_store_info</code>
-                    </blockquote>
-                `
-            },
-            {
-                id: "sys-logging-calls-outreach",
-                title: "Logging Calls in Outreach",
-                category: "4. System User Guides",
-                tags: ["outreach", "logging", "disposition", "purpose"],
-                content: `
-                    <p>It is imperative that you ensure your calls are logged as an MSM. The system tracking framework hinges on three mandatory input fields:</p>
-                    <ul>
-                        <li><strong>Call Purpose:</strong> Outlines the exact intent of your dial or the stakeholder classification you reached.</li>
-                        <li><strong>Disposition:</strong> Records the definitive outcome of the call block.</li>
-                        <li><strong>Prospect:</strong> Directs and syncs data to the "Contact" record inside Salesforce.</li>
-                    </ul>
-
-                    <h3>Standard Core Disposition Values:</h3>
-                    <ul>
-                        <li><code>Completed Call</code>: The sale was successfully completed over the phone and is verified live in the portal.</li>
-                        <li><code>Pitching</code>: A formal product pitch was completed, but the merchant did not sign or confirm on the live call.</li>
-                        <li><code>Follow up Call</code>: General reconnect attempt without a locked calendar placeholder.</li>
-                        <li><code>Appointment Set</code>: The merchant agreed to a locked, formal follow-up date and time block.</li>
-                        <li><code>Requested Callback</code>: The merchant was busy during the dial and requested a callback later in the shift.</li>
-                    </ul>
-                `
-            },
-            {
-                id: "sys-merchant-portal-deep-links",
-                title: "Merchant Portal & Deep Links",
-                category: "4. System User Guides",
-                tags: ["portal", "deep-links", "campaign", "navigation"],
-                content: `
-                    <p>To master basic structural navigation paths, refer to the official internal Portal Training Framework.</p>
-                    
-                    <h2>Deep Linking Generation Workflow</h2>
-                    <p>Deep links let you configure a campaign on behalf of a merchant and email them a direct link that pre-fills the settings for easy approval.</p>
-                    <ol>
-                        <li>Navigate to <strong>'Run a Campaign'</strong> inside your administrative portal framework.</li>
-                        <li>Select the specific promotional mechanism you would like to distribute.</li>
-                        <li>Click <strong>'Customize Campaign'</strong>.</li>
-                        <li>Adjust the campaign parameters (budgets, caps, durations) to match your live discussion with the merchant.</li>
-                        <li>Click <strong>'Copy Deep Link'</strong>.</li>
-                        <li>Paste and distribute this tracking URL via email to the merchant for one-click approval.</li>
-                    </ol>
-                `
-            },
-            {
-                id: "sys-workspace-management",
-                title: "Gmail, Sheets & Calendly Config",
-                category: "4. System User Guides",
-                tags: ["gmail", "calendly", "gsheets", "inbox-zero"],
-                content: `
-                    <h2>Gmail Optimization Rules</h2>
-                    <ul>
-                        <li>Set up custom Gmail routing folders: <code>Gear Icon —&gt; Settings —&gt; Labels</code>.</li>
-                        <li>Maintain these standard labels: <code>My Merchants</code>, <code>DD Comms</code>, <code>1:1 Recaps</code>, <code>Training Resources & HR</code>.</li>
-                        <li><strong>Inbox Zero:</strong> Clear your main workspace inbox by the end of every shift to prevent missing critical merchant incoming mail loops.</li>
-                    </ul>
-
-                    <h2>Calendly Team Configuration Checklist</h2>
-                    <ol>
-                        <li>Sign up via your corporate Google account and establish your default time zone layout to <strong>PST</strong>.</li>
-                        <li>Event configuration: Title = <code>DoorDash 30 Minute Discussion</code>, Location = <code>Phone Call</code>, Duration = <code>30 Minutes</code>, Rolling Range = <code>15 Days</code>.</li>
-                        <li><strong>Mandatory Custom Invitee Questions Matrix:</strong>
-                            <br>- Store Name (Required)
-                            <br>- How many locations do you own/manage? (Required)
-                            <br>- Phone Number (Required)
-                            <br>- Are you able to login to the Merchant Portal? (Required)
-                        </li>
-                    </ol>
-                `
-            },
-            {
-                id: "sys-account-hierarchy",
-                title: "Account Hierarchy & Expansion (NSE)",
-                category: "4. System User Guides",
-                tags: ["nse", "hierarchy", "coo", "grandparent", "business-id"],
-                content: `
-                    <h2>New Store Expansion (NSE)</h2>
-                    <p>To add a store, instruct the merchant to navigate to the store dropdown menu icon (^) in their portal and click <strong>"Add store or business"</strong>.</p>
-                    <p>If the merchant is not the overarching corporate Decision Maker for all locations under that Business ID, create an MXP case to separate the store into its own Business ID. You can still link them under a master <strong>Business Group ID</strong> (Grandparent Account) via an MXP case.</p>
-                    
-                    <h3>Marketplace Account Hierarchy Map:</h3>
-                    <p><code>Business Group (Grandparent) —&gt; Business ID (Parent) —&gt; Store ID (Child)</code></p>
-
-                    <h2>Change of Ownership (COO)</h2>
-                    <p>The fastest path is <strong>Self-Serve COO (SSCOO)</strong> via the portal link: <code>doordash.com/merchant/change-of-ownership</code>. For real-time processing support, use the Slack channel: <code>#ask-sscoo</code>.</p>
-                `
-            },
-            // CATEGORY 5: OPERATIONS & POLICY
-            {
-                id: "policy-roe-validation",
-                title: "ROE & CW Sales Validation",
-                category: "5. Operations & Policy",
-                tags: ["roe", "cw", "validation", "crediting", "goals", "boq", "eoq"],
-                content: `
-                    <h2>Rules of Engagement (ROE) & Sales Crediting</h2>
-                    <p>Sales crediting is audited on strict timeline metrics evaluated against Beginning of Quarter (BOQ) and End of Quarter (EOQ) snapshots.</p>
-                    
-                    <h3>Optimized Mx Performance Metrics (Ads & Promos Goaling):</h3>
-                    <ul>
-                        <li><strong>Net New Ads Stores:</strong> Total active stores running SL campaigns at EOQ minus the BOQ active benchmark count.</li>
-                        <li><strong>Net New Promo Stores:</strong> Total active stores running Promotions at EOQ minus the BOQ baseline.</li>
-                    </ul>
-
-                    <h3>Store Status Scenarios for Attainment Calculation:</h3>
-                    <ul>
-                        <li>Sign up an ad campaign during the quarter and it remains active at EOQ = <strong>+1 Net New Store Credit</strong>.</li>
-                        <li>Sign up a campaign but the store cancels or churns off before EOQ = <strong>0 Credit</strong>.</li>
-                        <li>Store starts the quarter with active ads but cancels during your cycle = <strong>-1 Deduction</strong> from net attainment.</li>
-                        <li>Sign up a store, it cancels, and you re-sign it within the same quarter = <strong>+1 Net New Store Credit</strong>.</li>
-                        <li>Adding a secondary ad campaign to a store that already runs an active ad = <strong>0 Credit</strong>.</li>
-                    </ul>
-
-                    <h3>Unoptimized Book Metrics (AM Input Focus):</h3>
-                    <p>AM goals for unoptimized Books of Business look at total volume inputs across three categories:</p>
-                    <ol>
-                        <li><strong>Mx Retention %:</strong> Total unique storefront nodes preserved over the quarter block.</li>
-                        <li><strong>Videos Added:</strong> Verified unique video configurations completed.</li>
-                        <li><strong>Photos Added:</strong> Net count of clean menu item images uploaded and published.</li>
-                    </ol>
-                `
-            },
-            {
-                id: "policy-ramping-texting",
-                title: "New Hire Ramping & Texting Policy",
-                category: "5. Operations & Policy",
-                tags: ["ramping", "texting", "policy", "outputs", "inputs"],
-                content: `
-                    <h2>Corporate Texting Policy</h2>
-                    <p>Generally speaking, SMS outreach via Outreach or personal tools is **prohibited** unless meeting one of these strict criteria:</p>
-                    <ol>
-                        <li>The merchant has provided explicit written consent to receive text communications.</li>
-                        <li>The merchant initiates the text thread.</li>
-                        <li>The Account Manager is routing signature contracts through PactSafe.</li>
-                    </ol>
-
-                    <h2>New Hire Output Ramping Model</h2>
-                    <p>Outputs are tracked against target quotas for Ads, Promos, Photos, Videos, and Retention metrics:</p>
-                    <ul>
-                        <li><strong>Month 1:</strong> 0% of fully ramped output goals expected.</li>
-                        <li><strong>Month 2:</strong> 25% of fully ramped output goals expected.</li>
-                        <li><strong>Month 3:</strong> 50% of fully ramped output goals expected.</li>
-                        <li><strong>Month 4:</strong> 100% of fully ramped target production expected.</li>
-                    </ul>
-                    <p><em>Note: Inputs like Talktime and Touchpoint volume are tracked for coaching but are not assigned hard quota targets.</em></p>
-                `
-            },
-            // CATEGORY 6: SHARED REPOSITORIES
-            {
-                id: "res-directories-escalations",
-                title: "Slack Channels, Dashboards & Links",
-                category: "6. Shared Repositories",
-                tags: ["slack", "channels", "dashboards", "links", "escalations", "contacts"],
-                content: `
-                    <h2>Active Slack Directory</h2>
-                    <ul>
-                        <li><code>#mss-mxp--urgent-requests-and-escalations</code>: Critical MXP tickets open >48hrs with no agent response. Tag your TL.</li>
-                        <li><code>#ask-coo</code>: Change of Ownership issues and blockages.</li>
-                        <li><code>#ask-virtualbrands</code>: Virtual Brand menus, creations, and reactivations.</li>
-                        <li><code>#dd-am-costa-rica</code>: Primary communication layer for the sales floor.</li>
-                        <li><code>#account_owner_changes</code>: Structural Book of Business account ownership shifts.</li>
-                        <li><code>#movate-presales-adds</code>: Referrals to pre-sales teams.</li>
-                    </ul>
-
-                    <h2>Important Dashboards & Forms</h2>
-                    <ul>
-                        <li><strong>Movate Lead List:</strong> Single Source of Truth (SOT) for pipeline leads.</li>
-                        <li><strong>Movate Dashboard:</strong> Sigma dashboard for performance reports and tracking data.</li>
-                        <li><strong>Credits Dashboard:</strong> Tracks marketing credits applied across Movate managed accounts.</li>
-                        <li><strong>Cofunding Form:</strong> Submission engine for custom co-funded merchant promos.</li>
-                    </ul>
-
-                    <h2>DoorDash Longtail Leadership Matrix</h2>
-                    <ul>
-                        <li><strong>Tiffany Chen (Vendor S&O):</strong> Manages the corporate partnership between Movate and DoorDash (billing, hiring, performance reviews).</li>
-                        <li><strong>Jess Jobanputra (Sales S&O):</strong> Drives operational strategy for Canada SMB Post-Sales across onshore and offshore teams.</li>
-                        <li><strong>Maya Chhabra (Sales S&O):</strong> Leads strategic account management operations for the Movate footprint.</li>
-                        <li><strong>Badih El-Hachem (Sales):</strong> Head of Restaurant Success for Canada SMB.</li>
-                        <li><strong>Vito Apa (Sales):</strong> Leads the overarching sales strategy for the Movate account management floor.</li>
-                        <li><strong>Samantha Asare (Sales):</strong> Movate Team Lead, supporting Vito on strategy and direct floor management.</li>
-                        <li><strong>Sydney Galt & Savitri Nariswari (Retention):</strong> Own Project Lifeline tracking loops for accounts flagged as high churn risks.</li>
-                    </ul>
+                    <h2>Self Serve COO (SSCOO)</h2>
+                    <p>This is the preferred and faster way to initiate COO. Escalations and live assistance threads run through the Slack channel: <code>#ask-sscoo</code>.</p>
+                    <p>Merchant Facing COO Landing Page: <a href="https://doordash.com/merchant/change-of-ownership" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">doordash.com/merchant/change-of-ownership</a></p>
+                    <h2>Work Orders in DDMx</h2>
+                    <p>Before submitting a manual support case, visit our Merchant Learning Center to find the answers to your questions: <a href="https://merchants.doordash.com/en-ca/learning-center" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">https://merchants.doordash.com/en-ca/learning-center</a></p>
                 `
             }
         ];
 
-        // ENGINE RUNTIME OBJECT MANAGEMENT
+        // ENGINE RUNTIME CONTROL LAYER
         const sidebar = document.getElementById('sidebar');
         const contentView = document.getElementById('content-view');
         const searchBar = document.getElementById('search-bar');
 
         function renderSidebar(articles) {
             sidebar.innerHTML = '';
-            
-            // Group data by Category string values
             const categories = {};
+            
             articles.forEach(article => {
                 if (!categories[article.category]) {
                     categories[article.category] = [];
@@ -957,7 +692,6 @@
                 categories[article.category].push(article);
             });
 
-            // Sort alphabetical category nodes
             const sortedCategories = Object.keys(categories).sort();
 
             sortedCategories.forEach(category => {
@@ -974,7 +708,7 @@
                     link.className = 'article-link';
                     link.textContent = article.title;
                     link.dataset.id = article.id;
-                    link.title = article.title; // Tooltip fallback
+                    link.title = article.title;
                     link.addEventListener('click', () => displayArticle(article.id));
                     group.appendChild(link);
                 });
@@ -1003,11 +737,9 @@
                     ${article.content}
                 </div>
             `;
-            // Auto-scroll viewer screen context back to top node
             contentView.scrollTop = 0;
         }
 
-        // FUZZY REAL-TIME INDEX SEARCH FILTER
         searchBar.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase();
             
@@ -1027,10 +759,7 @@
             } else {
                 contentView.innerHTML = `
                     <h2>No matching playbook topics found</h2>
-                    <p style="margin-top:0.5rem; color:#6b7280;">
-                        No results match your keyword query. Try searching for standard playbook metrics or acronyms like 
-                        <code>CPA</code>, <code>MINT</code>, <code>BOGO</code>, <code>ZTP</code>, <code>SLA</code>, or <code>ROE</code>.
-                    </p>
+                    <p style="margin-top:0.5rem; color:#6b7280;">No results match your search parameters.</p>
                 `;
             }
         });
