@@ -497,18 +497,56 @@
                 category: "3. Sales & Support Process",
                 tags: ["research", "efficiency", "sl_opp", "promo_opp"],
                 content: `
-                    <p>The purpose of pre-call research is to build an agenda so that you sound prepared for your call with the mx. It’s also important to be efficient with your pre-call research time. You do not want to spend 10 minutes researching an account, just for the DM to not answer. A reasonable amount of time for pre-call research is between <strong>2-3 minutes</strong>.</p>
-                    <h3>Research Dimensions Checklist:</h3>
+                    <h2>Pre-Call Research</h2>
+                    <p>The purpose of pre-call research is to build an agenda so that you sound prepared for your call with the mx. It’s also important to be efficient with your pre-call research time. You do not want to spend 10 minutes researching an account, just for the DM to not answer. A reasonable amount of time for pre-call research is between 2-3 minutes. Here are the most common things you should research within that time frame to ensure that you are prepared for the call.</p>
+                    
+                    <h3><u>Time Zones:</u></h3>
+                    <p>Please check the time zone the merchant is in, and compare it to your time zone in CR. This will allow you to ensure that you’re calling during the appropriate business hours which are correlated with the most DM connects.</p>
+                    
+                    <h3><u>Opportunity Size:</u></h3>
+                    <p>Sorting your BoB by opportunity size will allow you to measure which merchants <em>could</em> have the biggest potential impact on your quota. This can be especially effective if you are behind in certain buckets and you want to target the area that you have fallen behind in. Once you pull up your BoB, please look for the following columns:</p>
                     <ul>
-                        <li><strong>Time Zones:</strong> Please check the time zone the merchant is in, and compare it to your time zone in CR. This will allow you to ensure that you’re calling during the appropriate business hours which are correlated with the most DM connects.</li>
-                        <li><strong>Opportunity Size:</strong> Sorting your BoB by opportunity size will allow you to measure which merchants could have the biggest potential impact on your quota. Check these exact binary tracking tags:
-                            <br><code>SL_OPP</code> - Binary 1/0 where 0 means no ads opportunity (active ad running) and 1 means open opportunity.
-                            <br><code>PROMO_OPP</code> - Binary 1/0 where 0 means no promo opportunity and 1 means open opportunity.
+                        <li>SL_OPP - 
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.2rem;">
+                                <li>This is a binary 1/0 where a 0 means there is no ads opportunity (there is already an active ad on the store) and 1 means there is an open opportunity</li>
+                            </ul>
                         </li>
-                        <li><strong>Campaign Reporting Navigation:</strong> Log in to Mx Portal → Click on Marketing → Campaign Reporting. Best used to validate current marketing metrics. Note: Sigma scales update once per week; look directly here before forming baseline pitch assumptions.</li>
-                        <li><strong>Sales Trends Navigation:</strong> Log in to Mx Portal → Click on Insights → Sales. Look for green or red arrows indicating percentage changes.</li>
-                        <li><strong>Customer Insights Navigation:</strong> Log in to Mx Portal → Click on Customers → Customer Insights. Helps segment users into New, Occasional, or Frequent brackets.</li>
+                        <li style="margin-top: 0.5rem;">PROMO_OPP - 
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.2rem;">
+                                <li>This is a binary 1/0 where a 0 means there is no promo opportunity (there is already an active promo on the store) and 1 means there is an open opportunity</li>
+                            </ul>
+                        </li>
                     </ul>
+                    
+                    <h3><u>Identifying the DM’s Contact Info:</u></h3>
+                    <p>The DM’s name and direct number are listed directly in your BoB / Lead List. It is important to note that the phone number field may be missing. As a best practice, please search for other Contacts listed in SFDC. Other areas to search for contacts:</p>
+                    <ul>
+                        <li>MXP Cases</li>
+                        <li>Merchant Portal</li>
+                        <li>Google</li>
+                        <li>AskDataAI</li>
+                    </ul>
+                    
+                    <h3><u>Campaign Reporting:</u></h3>
+                    <p>Best used to see current marketing performance and validate A&P opportunity size. Please keep in mind, the Sigma that your BoB lives on is <u>only updated once per week</u>. It’s important that you review the Campaign Reporting tab prior to making assumptions regarding a Mx’s existing campaigns. In addition, this tab allows you to:</p>
+                    <ol>
+                        <li>Check existing campaign performance over various durations (7 days, 30 days, etc.)</li>
+                        <li>Research performance of previously ended, paused, or scheduled campaigns (I.e, click on “Completed” under the all campaigns drop down menu)</li>
+                        <li>Guide a Mx via self-serve on how to run a new campaign</li>
+                    </ol>
+                    <p style="font-weight: 600; color: #0f766e;">Navigation: Log in to Mx Portal ➔ Click on Marketing ➔ Campaign Reporting</p>
+                    <p style="margin-top: 0.5rem; font-style: italic; color: #6b7280;">[Note: Playbook portal screenshot visualization located here]</p>
+                    <p style="margin-top: 0.5rem;">Click on a specific campaign for a more in-depth breakdown of the campaigns performance</p>
+                    
+                    <h3><u>Sales Trends:</u></h3>
+                    <p>Best used to measure a Mx’s sales performance over a specific period of time (Daily, Weekly, Monthly, etc.) Especially useful for spotting fluctuations in sales trends (negative or positive) by looking for the <span style="color: #16a34a; font-weight: 600;">green</span> or <span style="color: #dc2626; font-weight: 600;">red</span> arrow followed by a percentage amount.</p>
+                    <p style="font-weight: 600; color: #0f766e;">Navigation: Log in to Mx Portal ➔ Click on Insights ➔ Sales</p>
+                    <p style="margin-top: 0.5rem; font-style: italic; color: #6b7280;">[Note: Playbook sales dashboard visualization located here]</p>
+                    
+                    <h3><u>Customer Insights:</u></h3>
+                    <p>Best used to identify the different customer types (New, Occasional, Frequent) and to help your Mx tailor their store’s approach on the DD Marketplace to maximize engagement.</p>
+                    <p style="font-weight: 600; color: #0f766e;">Navigation: Log in to Mx Portal ➔ Click on Customers ➔ Customer Insights</p>
+                    <p style="margin-top: 0.5rem; font-style: italic; color: #6b7280;">[Note: Playbook customer insights graph visualization located here]</p>
                 `
             },
             {
