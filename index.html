@@ -277,6 +277,62 @@
 
     <script>
         const kbData = [
+            // CATEGORY 0: MASTER INDEX / WELCOME PAGE
+            {
+                id: "playbook-master-index",
+                title: "★ Master Playbook Index",
+                category: "0. Playbook Hub Index",
+                tags: ["index", "navigation", "directory", "roadmap"],
+                content: `
+                    <h2>DoorDash Canada MSM Onboarding & Strategy Index</h2>
+                    <p>Welcome to the Interactive Knowledge Hub. Use this master directory to quickly jump to specific operational parameters, compliance policies, or conversational scripts across your core onboarding curriculum.</p>
+                    
+                    <hr style="border: 0; border-top: 1px solid #e5e7eb; margin: 1.5rem 0;">
+                    
+                    <h3>1. General Onboarding Foundations</h3>
+                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('msm-role-overview');" style="color: #ff3008; font-weight: 600; text-decoration: none;">MSM Role Overview</a> — Core visibility goals (Menu, Ads, Promos, Retention).</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('general-managing-gmail');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Managing Gmail & Inbox Zero</a> — Structural label frameworks and time-management.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('general-new-hire-ramp');" style="color: #ff3008; font-weight: 600; text-decoration: none;">New Hire Ramp Scale</a> — The 0/25/50/100 performance output progression milestones.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('general-roles-responsibilities');" style="color: #ff3008; font-weight: 600; text-decoration: none;">DoorDash Longtail Team: Roles & Responsibilities</a> — Onshore/Offshore org chart and leadership contacts.</li>
+                    </ul>
+
+                    <h3>2. Marketplace Product Knowledge</h3>
+                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('prod-marketplace-packages');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Marketplace Packages</a> — Commission matrices for Basic (20%), Plus (25%), and Premier (29%).</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('prod-dashpass');" style="color: #ff3008; font-weight: 600; text-decoration: none;">DashPass Subscriptions</a> — Tapping into high-value consumer volume trends (30% uplift).</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('prod-sponsored-listings');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Sponsored Listings (Ads)</a> — CPA conversion mechanics vs. industry-standard CPC models.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('prod-promotions');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Promotions & Smart Campaigns</a> — Growth mechanics for TWD, TMF, DDD, OAAS, and BOGO options.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('prod-store-loyalty');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Store Loyalty Program</a> — High-retention repeat purchasing systems and MINT backend escalation links.</li>
+                    </ul>
+
+                    <h3>3. Sales Mechanics & Support Processes</h3>
+                    <ul style="list-style-type: square; padding-left: 1.5rem;">
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-order-of-operations');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Order of Operations</a> — Overcoming friction by executing non-fee trust hooks first.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-pre-call-research');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Pre-Call Research Checklist</a> — Maximizing efficiency using SL_OPP and PROMO_OPP binary sizing flags.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-intro-call');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Intro Call & Pitching Scripts</a> — Alpha-structured conversational hooks and presentation scripts.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-quality-metrics');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Quality Metrics & Operations Quality</a> — Photo/video capture flows, wait times, and cancellation boundaries.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-most-loved');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Most Loved & Consultative Selling</a> — High-visibility parameters vs. transactional selling pitfalls.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-discovery-ap');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Discovery & A&P Upsell</a> — Uncovering business objectives to pitch automated auto-bidding tools.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-objection-handling');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Objection Handling Matrix & Dayparting</a> — 10-point diagnostic rebuttal track and tactical scheduling controls.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('contact-strategy-cadence');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Contact Strategy & Outreach Cadence</a> — Compliance safeguards limiting outreach touches per single business day.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-voicemails-emails');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Voicemails, Emails & Signature Configuration</a> — Drip tag sequence deployments and copy blueprints.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-pipeline-management');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Pipeline Management</a> — Strategic lead management guidelines and the daily 30-lead target sprint.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-account-owner-changes');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Account Owner Changes</a> — Structural approval paths using the Slack Workflow configuration engine.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-new-store-expansion');" style="color: #ff3008; font-weight: 600; text-decoration: none;">New Store Expansion (NSE)</a> — Account level grouping systems (Concept vs. Business ID vs. Store ID).</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-change-of-ownership');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Change of Ownership (COO)</a> — SSCOO portal triggers and Work Order support matrices.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-cross-functional-work');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Working Cross-Functionally</a> — Figment account assignment workflows and MXP-SMB queue SLA metrics.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-handling-fraud');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Handling Fraud Inquiries</a> — Escalation queues for tracking Cx, Dx, and Mx risk trends.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-qa-scorecards');" style="color: #ff3008; font-weight: 600; text-decoration: none;">QA Scorecards & ZTP</a> — Simplified 3-tier grading variables and Zero Tolerance Policies.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-requesting-perms');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Requesting Perms for Systems</a> — Security provisioning scripts for sensitive Raven permission keys.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-logging-calls');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Logging Calls in Outreach</a> — Call purpose color legend variables and disposition routing logic charts.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-mx-portal-navigation');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Mx Portal Navigation & Deep Links</a> — Direct merchant onboarding paths and customized campaign generation.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-calendly-setup');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Calendly & Outreach Calendar Setup</a> — Event type specifications and mandatory screening configurations.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-cw-validation');" style="color: #ff3008; font-weight: 600; text-decoration: none;">CW Validation (Sales Crediting)</a> — S&O net new verification parameters and quota calculation guidelines.</li>
+                        <li><a href="#" onclick="event.preventDefault(); displayArticle('sales-texting-policy');" style="color: #ff3008; font-weight: 600; text-decoration: none;">Texting Policy</a> — Written consent compliance constraints and Outreach messaging rules.</li>
+                    </ul>
+                `
+            },
             // CATEGORY 1: GENERAL
             {
                 id: "msm-role-overview",
@@ -485,7 +541,7 @@
                     <ul style="list-style-type: none; padding-left: 1rem;">
                         <li><strong><u>Cost to Mx:</u></strong> Marketing fee of .99 cents per order this promo generates + the customer discount % or $ amount off that they chose for each order placed.</li>
                         <li><strong><u>Expected Results:</u></strong> 16% increase in Sales Revenue, 6x ROI</li>
-                        <li><strong><u>Goal:</u></strong> New Acquisition + Retention</li>
+                        <li><strong>URL Verification Target:</strong> New Acquisition + Retention</li>
                     </ul>
                     <h3>Try With Discount <span style="color: #6b7280; font-size: 0.9rem; font-weight: normal;">(TWD/First Order % Off)</span></h3>
                     <p>- Incentivizes new Cxs by offering 20% off of their first order over $15 (for a maximum discount of $5.) This benefits the Mx who are already on DP and benefiting from $0 delivery.</p>
@@ -1154,7 +1210,7 @@
                     <h2>New Store Expansion (NSE) & Business Group IDs</h2>
                     <p><strong>How do Mx add another store on DoorDash?</strong></p>
                     <p>In the Merchant Portal, have the Mx select their store or business name dropdown icon (^), and then click on “Add store or business”:</p>
-                    <p style="margin: 1rem 0; font-style: italic; color: #6b7280;">[Note: Playbook portal dropdown image visualization 'image_3ab411.png' located here]</p>
+                    <p style="margin: 1rem 0; font-style: italic; color: #6b7280;">[Note: Playbook hierarchy chart 'image_3ab411.png' located here]</p>
                     <p>The Mx will be guided through an onboarding experience to complete setting up their new store, or new business concept. They will be able to track the onboarding status of the new store.</p>
                     <p><strong>Please note:</strong> If the Merchant is not the decision maker for <strong>all</strong> locations under the Business ID (i.e. they are not the “Business Admin” or they do not own/manage <strong>all</strong> locations under the Business ID) please have an MXP case created to move their stores to a different Business ID not associated with any other stores. We can still provide the Mx access to all locations they own with one email login under a “Business Group ID” (sometimes called a “Grandparent Account”) however these must be created by an MXP</p>
                     <p><strong>Business Group IDs</strong> will give a user access to multiple stores or multiple concepts even if they are under different Business IDs. E.g. “Bob’s Burgers” and “Tony’s Tacos” could both be accessed by the same email address if they are under a Business Group ID. As noted above, if a Business Group ID is created, the Business Admin email assigned will have access to <strong>all</strong> stores under <strong>all</strong> associated Business IDs, so please make sure that we are not adding a Business ID to a Business Group where a user should not have access to all locations.</p>
@@ -1417,7 +1473,6 @@
                     <ol style="list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem;">
                         <li><strong>Call Purpose</strong> - Outlines the intent of your call and/or the person you spoke to.</li>
                         <li><strong>Disposition</strong> - Outlines the end result of your call.</li>
-                        <li><strong>Prospect</strong> - Routes to the “Contact” in SFDC. Not shown in this flow chart.</li>
                     </ol>
                     <h3>Legend</h3>
                     <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
@@ -1563,6 +1618,74 @@
                     </ul>
                     <h2>Profit Calculator / Take Home Pay</h2>
                     <p><strong>[Sheet] Profit Calculator - Master Sheet</strong></p>
+                `
+            },
+            {
+                id: "sales-cw-validation",
+                title: "CW Validation (Sales Crediting)",
+                category: "3. Sales & Support Process",
+                tags: ["crediting", "validation", "goaling", "ads", "promos"],
+                content: `
+                    <h2>CW Validation (Sales Crediting)</h2>
+                    <h3>A&P Goaling:</h3>
+                    <ul>
+                        <li>A&P goals for optimized Mx will focus on 2 metrics:
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li><strong>Net New Ads Stores:</strong> # of additional stores to Beginning of Quarter (BOQ) # of stores running SL campaigns</li>
+                                <li><strong>Net New Promo Stores:</strong> # of additional stores to BOQ # of stores running Promotions
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                        <li><strong>A net new store count</strong> is defined as a store that is:
+                                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                                <li>Not on Ads at the beginning of the quarter</li>
+                                                <li>On Ads at the end of the quarter</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-top: 0.5rem;">Following scenarios define store count:
+                                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                                <li>If a store gets signed up on Ads in <strong>the quarter</strong> and doesn’t churn in <strong>by end of quarter</strong>, that counts as 1 net new store</li>
+                                                <li>If a store gets signed up on Ads in <strong>quarter</strong> and churns in <strong>the same quarter</strong>, that counts as 0 net new store</li>
+                                                <li>If a store begins the <strong>quarter</strong> with ads, and churns in <strong>current quarter</strong>, that counts as -1 net new store</li>
+                                                <li>If a store gets signed up on Ads in <strong>quarter</strong> and churns in <strong>the same quarter</strong>, and gets signed up again in <strong>the same quarter</strong>, that counts as 1 net new store</li>
+                                                <li>If store already has Ad <strong>in quarter</strong>, and another Ad is added, that counts as <strong>0</strong></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>AM Goaling:</h3>
+                    <ul>
+                        <li>AM goals for unoptimized Mx will focus on 3 metrics:
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li><strong>Mx Retention %:</strong> # of unique Mx retained over a given period</li>
+                                <li><strong>Videos Added:</strong> # of unique Mx with videos added over a given period</li>
+                                <li><strong>Photos Added:</strong> # of new photos added over a given period</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div style="background-color: #f9fafb; padding: 1rem; border-radius: 6px; border: 1px dashed #ced4da; margin-top: 1.5rem;">
+                        <p style="margin: 0; font-family: monospace; font-size: 0.9rem; color: #4b5563;">***MC to add a flag for the quarter</p>
+                        <p style="margin: 0.25rem 0 0 0; font-family: monospace; font-size: 0.9rem; color: #4b5563;">***MC to add analytics view in here</p>
+                        <p style="margin: 0.25rem 0 0 0; font-family: monospace; font-size: 0.9rem; color: #4b5563;">***MC to add info on what movate can submit that they might want reviewed, and information on timing for attainment - churn calcs, Mx retention viewed at EOQ, every 2 week process on checking for accuracy in the reporting</p>
+                        <p style="margin: 0.25rem 0 0 0; font-family: monospace; font-size: 0.9rem; color: #4b5563;">***MC to ask US team how they handle adjustments</p>
+                    </div>
+                `
+            },
+            {
+                id: "sales-texting-policy",
+                title: "Texting Policy",
+                category: "3. Sales & Support Process",
+                tags: ["policy", "texting", "compliance", "outreach", "pactsafe"],
+                content: `
+                    <h2>Texting Policy</h2>
+                    <h3>Can I Text Merchants Through Outreach?</h3>
+                    <p>Generally speaking no, unless under one of the following circumstances:</p>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+                        <li>Only when the Mx has explicitly consented to receive a text message from DoorDash in writing.</li>
+                        <li style="margin-top: 0.25rem;">When the merchant initiates the text exchange</li>
+                        <li style="margin-top: 0.25rem;">When sending contracts through PactSafe</li>
+                    </ol>
                 `
             }
         ];
