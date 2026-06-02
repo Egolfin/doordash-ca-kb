@@ -1160,6 +1160,683 @@
                     <p>Before submitting a support case, visit our Merchant Learning Center to find the answers to your questions! <a href="https://merchants.doordash.com/en-ca/learning-center" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">https://merchants.doordash.com/en-ca/learning-center</a></p>
                 `
             }
+            
+            {
+                id: "sales-cross-functional-work",
+                title: "Working Cross-Functionally",
+                category: "3. Sales & Support Process",
+                tags: ["cross-functional", "mxp", "sfdc", "escalation", "sla"],
+                content: `
+                    <h2>Cross-Functional Work</h2>
+                    <p><strong>Remember: In order to create a respectful and inclusive work environment</strong> we have expectations for professional communication and conduct with merchants, cross-functional partners, DoorDash leadership, your colleagues, etc.</p>
+                    
+                    <p style="margin-top: 1rem; margin-bottom: 0.5rem;">Meeting these expectations has an impact on:</p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li>Team Culture</li>
+                        <li>Vendor to Onshore Partnerships</li>
+                        <li>Onshore to Vendor Partnerships</li>
+                        <li>Productivity</li>
+                        <li>Interdepartmental collaboration</li>
+                    </ul>
+
+                    <h3>Working with MXPs:</h3>
+                    <p><strong>Assigned MXP’s can be found one of two ways:</strong></p>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li>SFDC (Figment)
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>On the Parent Level / Business page under the ‘Related’ tab under ‘Account Team’</li>
+                            </ol>
+                        </li>
+                        <li style="margin-top: 0.5rem;">MXP Coverage Status Sigma (Manager/TL Access only)
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Enter the Business ID to see the MXP assigned under ‘Coverage’</li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                    <p><strong>Common MXP Requests:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 2rem;">
+                        <li>Payout issues/discrepancies</li>
+                        <li>Order cancellation escalations</li>
+                        <li>Change of Ownership</li>
+                        <li>Update banking information</li>
+                        <li>Account Fraud</li>
+                        <li>POS Issues</li>
+                        <li>Tablet/Printer Issues</li>
+                        <li>Taxes</li>
+                        <li>Merge / Group Businesses or accounts</li>
+                        <li>Change pricing plans for multi-locations</li>
+                    </ul>
+
+                    <p><strong>What if the mx does not have an MXP assigned to their Business ID?</strong></p>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 2rem;">
+                        <li>Create an AM Case in DDMx and the case will be assigned to the MXP-SMB Queue
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>MXP-SMB Queue is for P0 categories and SLA is 15 hours (Fraud, Store status, COO, Payment discrepancies)</li>
+                                <li>P1/P2 categories (business merge requests, etc) SLA is 48 hours</li>
+                            </ol>
+                        </li>
+                        <li style="margin-top: 0.5rem;">If a case needs to be escalated or is not resolved within the SLA, send a direct slack message to the MXP assigned to the case.
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>If the MXP is unresponsive after 24 hours, please have your direct TL escalate the case to the #mss-mxp--urgent-requests-and-escalations channel and include your DoorDash TL</li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                    <p><strong>MSM&lt;&gt;MXP XFN Best Practices:</strong></p>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 2rem;">
+                        <li>Always create a case first before reaching out to an MXP.</li>
+                        <li style="margin-top: 0.5rem;">If you require additional case progress updates, after 24-hours, send a Slack direct message (DM) to the MXP for updates on a case. The escalation channel is only for cases that have been open for more than 48 hours and you have not heard from the assigned MXP for more than 24 hours.</li>
+                        <li style="margin-top: 0.5rem;">When adding notes to the case, leave as much detail as possible. The more context the better. You will likely also get a quicker resolution if you gather the correct documentation needed from the Mx and provide this to the MXP either in the case, or via a Slack message.</li>
+                    </ol>
+
+                    <h3>Working Across Teams (Most Frequent Scenarios)</h3>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                        <li>There are a number of unique scenarios that an MSM will encounter when managing Mx partnerships. Please refer to the sheet below to find the most frequent scenarios and what steps to take to resolve.
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>MSM - Working Across Teams</li>
+                            </ul>
+                        </li>
+                    </ul>
+                `
+            },
+
+            {
+                id: "sales-handling-fraud",
+                title: "Handling Fraud Inquiries",
+                category: "3. Sales & Support Process",
+                tags: ["fraud", "compliance", "escalation", "sla", "security"],
+                content: `
+                    <h2>Handling Fraud Inquiries</h2>
+                    <p>There are 3 different types of fraud that can happen: Customers / Merchants / Dasher. There is a dedicated Slack channel to help assist with any of those inquiries.</p>
+                    
+                    <!-- CX FRAUD SECTION -->
+                    <h3 style="margin-top: 1.5rem;"><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Cx Fraud Escalations (#ask-cx-fraud)</span></h3>
+                    <p><strong>Use when:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Suspected fraud involving a <strong>Customer (Cx)</strong></li>
+                        <li>Refund abuse, promo abuse, account abuse, etc.</li>
+                    </ul>
+                    <p><strong>How to escalate:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Submit via <strong>SFDC / THQ ➔ Cx Fraud Escalations queue</strong></li>
+                    </ul>
+                    <p><strong>What to include:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Account details (Cx ID)</li>
+                        <li>Summary of suspected behavior</li>
+                        <li>Relevant transactions / examples</li>
+                    </ul>
+                    <p><strong>SLA:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 2rem;">
+                        <li>24 hours</li>
+                    </ul>
+
+                    <!-- DX FRAUD SECTION -->
+                    <h3><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Dx Fraud Escalations (#ask-dx-fraud)</span></h3>
+                    <p><strong>Use when:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Suspected fraud involving a <strong>Dasher (Dx)</strong></li>
+                        <li>Geospoofing, collusion, delivery manipulation, etc.</li>
+                    </ul>
+                    <p><strong>How to escalate:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Submit via <strong>SFDC / THQ ➔ Dx Fraud Escalations queue</strong></li>
+                    </ul>
+                    <p><strong>What to include:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Dx ID</li>
+                        <li>Delivery IDs</li>
+                        <li>Pattern or behavior observed</li>
+                    </ul>
+                    <p><strong>SLA:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 2rem;">
+                        <li>24 hours</li>
+                    </ul>
+
+                    <!-- MX FRAUD SECTION -->
+                    <h3><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Mx Fraud Investigations (#ask-mx-fraud)</span></h3>
+                    <p><strong>Use when:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Suspected fraud involving a Merchant (Mx)</li>
+                        <li>Unauthorized access (ATO), suspicious activity, abuse</li>
+                    </ul>
+                    <p><strong>How to escalate:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Submit via:
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>SFDC / THQ ➔ Mx Fraud Investigations</li>
+                                <li>or DDMX - Mx Fraud Investigations</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>What to include:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Merchant ID</li>
+                        <li>Description of issue</li>
+                        <li>Evidence of suspicious behavior</li>
+                    </ul>
+                    <p><strong>SLA:</strong></p>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                        <li>24 hours</li>
+                    </ul>
+                `
+            },
+
+            {
+                id: "sales-qa-scorecards",
+                title: "QA Scorecards & ZTP",
+                category: "3. Sales & Support Process",
+                tags: ["qa", "scorecard", "ztp", "metrics", "compliance"],
+                content: `
+                    <h2>QA Scorecards</h2>
+                    <p>Our QA scoring model was created to reflect our current sales process.</p>
+                    <p>Here is the full scorecard: <span style="color: #ff3008; font-weight: bold; text-decoration: underline;">Mx Success Graded QA Scorecard</span></p>
+                    
+                    <h3>Drivers</h3>
+                    <p>Each step of the sales process has a different “driver”. Each driver contains a thorough description that allows the QA associate evaluating the call to make an accurate assessment of the seller's ability to execute each step in a live call scenario.</p>
+                    
+                    <h3>Ratings</h3>
+                    <p>We opted to utilize a 2-3 tier scoring model vs a sliding scale of 1-10. This was done in an effort to simplify the rating process and minimize variance of QA associates with various levels of experience. You will notice that most sections only have 2 options (Y/N), while others such as “Discovery” may have all 3, allowing room for a partial crediting system. This is due to the fact that Discovery is not black and white, it is a very nuanced part of the sales process that should be evaluated as such. Here is the 3 tier scoring model, as shown in the QA Form:</p>
+                    <p style="margin-left: 1rem; font-weight: 600;">
+                        <span style="color: #dc2626;">Did not demonstrate</span> | 
+                        <span style="color: #d97706;">Partially Demonstrated</span> | 
+                        <span style="color: #16a34a;">Effectively Demonstrated</span>
+                    </p>
+                    
+                    <h3>Points</h3>
+                    <p>Our point system was created primarily based on the importance of each step in relation to the overall sales process. There are, however, other factors considered. Such as:</p>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li><strong>Difficulty level to implement</strong> - The more challenging a step is to perform, the more points we (sometimes) allocate.</li>
+                        <li style="margin-top: 0.5rem;"><strong>Bad sales practices</strong> - On the contrary, bad sales practices are easy to execute. However, they are bad for the mx and/or DoorDash. Thus, we sometimes allocate more points here, to deter bad behavior. In some cases, leading up to ZTP (Zero Tolerance Policy).</li>
+                    </ol>
+                    
+                    <h2 style="color: #ff3008;">Zero Tolerance Policy (ZTP)</h2>
+                    <p>We uncovered a few errors in the sales process that were so common amongst mid-bottom performers that a mere 5 or 10 point deduction were not enough to deter it. Thus, we implemented the use of a ZTP, as a strict method of curbing bad behavior. If a rep violates a ZTP, they will receive an automatic 0 on their QA scorecard, which can oftentimes impact their compensation on the BPO side. However, reps do not receive additional points if they <em>don’t</em> violate the ZTP. It is looked at as a minimum expectation of the job, not extra credit.</p>
+                `
+            },
+            
+            {
+                id: "sales-requesting-perms",
+                title: "Requesting Perms for Systems",
+                category: "3. Sales & Support Process",
+                tags: ["permissions", "systems", "raven", "mx-portal", "access"],
+                content: `
+                    <h2>Requesting Perms for Systems</h2>
+                    <p><strong>Outreach/Chorus:</strong> These perms are submitted in bulk through BizApps by your TL/Manager, no action needed.</p>
+                    <p><strong>SFDC DDMx:</strong> This perm is submitted in bulk by your TL/Manager, no action needed.</p>
+                    <p><strong>Mx Portal:</strong> Each new rep will need to submit 2 <strong>individual</strong> Raven Permissions Requests <span style="color: #ff3008; font-weight: bold; text-decoration: underline;">HERE</span>. One ticket for “sensitive” perms and a separate one for “non-sensitive”.</p>
+                    
+                    <p style="margin-bottom: 2rem;">For Merchant Portal Access - Troubleshooting, please refer to <span style="color: #ff3008; font-weight: bold; text-decoration: underline;">this resource</span>.</p>
+                    
+                    <!-- TICKET 1 -->
+                    <h3>Ticket 1:</h3>
+                    <ol style="list-style-type: lower-roman; padding-left: 2.5rem; margin-bottom: 1.5rem;">
+                        <li><u>Summary</u>: Permissions Request</li>
+                        <li style="margin-top: 0.25rem;"><u>Business Justification</u>: Required to do the role. I need access to mx portal to walk merchants through SSMO for A&P, upload photos on behalf of merchants and edit menu descriptions.</li>
+                        <li style="margin-top: 0.25rem;"><u>Raven Permission Type</u>: Sensitive</li>
+                        <li style="margin-top: 0.25rem;"><u>Raven Permission(s)</u>:
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Perm_manage_business_dashboard_view</li>
+                                <li>Perm_edit_menu</li>
+                                <li>perm_merchant_reports</li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                    <!-- TICKET 2 -->
+                    <h3>Ticket 2:</h3>
+                    <ol style="list-style-type: decimal; padding-left: 2.5rem;">
+                        <li><u>Summary</u>: Permissions Request</li>
+                        <li style="margin-top: 0.25rem;"><u>Business Justification</u>: Required to do the role. Required to do the role. I need access to mx portal to walk merchants through SSMO for A&P, upload photos on behalf of merchants and edit menu descriptions.</li>
+                        <li style="margin-top: 0.25rem;"><u>Raven Permission Type</u>: Non-Sensitive</li>
+                        <li style="margin-top: 0.25rem;"><u>Raven Permission(s)</u>:
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Perm_view_store_settings</li>
+                                <li>perm_always_allow_admin_gateway_access</li>
+                                <li>perm_view_business</li>
+                                <li>perm_view_email</li>
+                                <li>perm_view_financial_info</li>
+                                <li>perm_view_store_info</li>
+                            </ol>
+                        </li>
+                    </ol>
+                `
+            },
+            
+            {
+                id: "sales-logging-calls",
+                title: "Logging Calls in Outreach",
+                category: "3. Sales & Support Process",
+                tags: ["outreach", "logging", "disposition", "flow-chart", "calls"],
+                content: `
+                    <h2>Logging Calls in Outreach</h2>
+                    <p>It is imperative that you ensure your calls are logged as an MSM. Here are the required fields:</p>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li><strong>Call Purpose</strong> - Outlines the intent of your call and/or the person you spoke to.</li>
+                        <li><strong>Disposition</strong> - Outlines the end result of your call.</li>
+                        <li><strong>Prospect</strong> - Routes to the “Contact” in SFDC. Not shown in this flow chart.</li>
+                    </ol>
+                    
+                    <h3>Legend</h3>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li>The large squares represent the <strong><em>Call Purpose</em></strong>. If it is outlined in <span style="color: red; font-weight: 600;">red</span> = never used. If it is outlined in <span style="color: orange; font-weight: 600;">orange</span> = occasionally used. If it is outlined in <span style="color: green; font-weight: 600;">green</span> = frequently used.</li>
+                        <li>Smaller squares represent the applicable Dispositions.</li>
+                        <li>Orange squares represent internal guidelines/notes for reference.</li>
+                    </ul>
+                    
+                    <h3>Disposition List</h3>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li><strong><em>Completed Call</em></strong> - Sale was completed on the phone and is active in the portal.</li>
+                        <li><strong><em>Pitching</em></strong> - A pitch was made however, the transaction was not completed over the phone.</li>
+                        <li><strong><em>Follow up Call</em></strong> - There was no solid appointment time, however, we are attempting to connect with the merchant.</li>
+                        <li><strong><em>Appointment Set</em></strong> - The merchant agreed to a solid follow-up time and date.</li>
+                        <li><strong><em>Requested Callback</em></strong> - The merchant was busy and requested a callback later that day.</li>
+                    </ul>
+                    
+                    <p style="font-size: 1.1rem; margin-top: 1.5rem;"><strong>*Please see <span style="color: #ff3008; text-decoration: underline; font-weight: bold; cursor: pointer;">this flow chart</span> for a visual.</strong></p>
+                    
+                    <p style="margin: 1rem 0; font-style: italic; color: #6b7280;">[Note: Playbook call logic flow chart diagram 'image_2e62c6.png' located here]</p>
+                `
+            },
+
+            {
+                id: "sales-mx-portal-navigation",
+                title: "Mx Portal Navigation & Deep Links",
+                category: "3. Sales & Support Process",
+                tags: ["portal", "navigation", "deep-links", "campaigns"],
+                content: `
+                    <h2>Mx Portal Navigation</h2>
+                    <p><strong>Learn the basics of navigating the Merchant Portal and where to find the different sections Mx can use to manage their store(s):</strong> <a href="https://get.doordash.com/en-ca/learning-center/navigation" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">https://get.doordash.com/en-ca/learning-center/navigation</a></p>
+                    
+                    <h3>Deep Links:</h3>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+                        <li>Navigate to ‘Run a Campaign’</li>
+                        <li style="margin-top: 0.25rem;">Select the campaign you would like to send a Deep Link for</li>
+                        <li style="margin-top: 0.25rem;">Click ‘Customize Campaign’</li>
+                        <li style="margin-top: 0.25rem;">Customize campaign details to what was discussed with the Mx</li>
+                        <li style="margin-top: 0.25rem;">Click ‘Copy Deep Link’</li>
+                        <li style="margin-top: 0.25rem;">Send Deep Link via email</li>
+                    </ol>
+                `
+            },
+
+            {
+                id: "general-managing-gmail",
+                title: "Managing Gmail & Inbox Zero",
+                category: "1. General",
+                tags: ["gmail", "organization", "labels", "inbox-zero"],
+                content: `
+                    <h2>Managing Gmail</h2>
+                    <p>Stay organized by using the following rules:</p>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+                        <li>Set up labels in Gmail - Gear icon (settings) &gt; labels tab &gt; labels section &gt; create new label &gt; Enter label name &gt; click create</li>
+                        <li style="margin-top: 0.5rem;">Suggested label names: My Merchants, DD Comms, 1:1 Recaps, Training Resources & HR.</li>
+                        <li style="margin-top: 0.5rem;">Finish the day with “Inbox Zero”. Your main inbox should be empty to prevent missing emails the next business day.</li>
+                        <li style="margin-top: 0.5rem;">Always ensure your Gmail Inbox and Google Calendar are always open on separate tabs (bookmark them or pin tabs)</li>
+                    </ol>
+                `
+            },
+
+            {
+                id: "sales-calendly-setup",
+                title: "Calendly & Outreach Calendar Setup",
+                category: "3. Sales & Support Process",
+                tags: ["calendly", "calendar", "setup", "outreach", "invitee"],
+                content: `
+                    <h2>Calendly/Outreach Calendar</h2>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+                        <li>Go to <a href="https://calendly.com" target="_blank" style="color: #ff3008; font-weight: bold; text-decoration: underline;">calendly.com</a></li>
+                        <li style="margin-top: 0.25rem;">Click ‘Get Started’ in the top right corner, or Sign Up</li>
+                        <li style="margin-top: 0.25rem;">Enter email and click ‘Get Started’ or connect via Google
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Choose account and click ‘Allow’ or ‘Continue’</li>
+                                <li>Choose your timezone (PST)</li>
+                                <li>Choose your working hours/availability</li>
+                                <li>Day to Day Role at Work? - Sales/Marketing</li>
+                                <li>Click ‘Finish’</li>
+                            </ol>
+                        </li>
+                        <li style="margin-top: 0.5rem;">Click ‘Create New Event Type’</li>
+                        <li style="margin-top: 0.25rem;">Click ‘One on One’</li>
+                        <li style="margin-top: 0.25rem;">Event Name - ‘DoorDash 30 Minute Discussion’</li>
+                        <li style="margin-top: 0.25rem;">Location - Phone Call</li>
+                        <li style="margin-top: 0.25rem;">Description/Instructions - Leave Blank</li>
+                        <li style="margin-top: 0.25rem;">Event Link - First name and last name (i.e. vitoapa)
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Click ‘Next’</li>
+                            </ol>
+                        </li>
+                        <li style="margin-top: 0.5rem;">Date Range - 15 days</li>
+                        <li style="margin-top: 0.25rem;">Duration - 30 minutes</li>
+                        <li style="margin-top: 0.25rem;">How do you want to offer your availability for this event type? - Use Existing Schedule (Working Hours)</li>
+                        <li style="margin-top: 0.25rem;">Add time before/after call? - NO, leave blank
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Click ‘Next’</li>
+                            </ol>
+                        </li>
+                        <li style="margin-top: 0.5rem;">Invitee Questions
+                            <ol style="list-style-type: lower-alpha; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Name</li>
+                                <li>Email</li>
+                                <li>Store Name - required</li>
+                                <li>How many locations do you own/manage? - required</li>
+                                <li>Phone Number - required</li>
+                                <li>Are you able to login to the Merchant Portal? - required</li>
+                                <li>Please share anything that will help me prepare for our meeting.</li>
+                            </ol>
+                        </li>
+                    </ol>
+                `
+            },
+
+            {
+                id: "sales-cw-validation",
+                title: "CW Validation (Sales Crediting)",
+                category: "3. Sales & Support Process",
+                tags: ["crediting", "validation", "goaling", "ads", "promos"],
+                content: `
+                    <h2>CW Validation (Sales Crediting)</h2>
+                    
+                    <h3>A&P Goaling:</h3>
+                    <ul>
+                        <li>A&P goals for optimized Mx will focus on 2 metrics:
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li><strong>Net New Ads Stores:</strong> # of additional stores to Beginning of Quarter (BOQ) # of stores running SL campaigns</li>
+                                <li><strong>Net New Promo Stores:</strong> # of additional stores to BOQ # of stores running Promotions
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                        <li><strong>A net new store count</strong> is defined as a store that is:
+                                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                                <li>Not on Ads at the beginning of the quarter</li>
+                                                <li>On Ads at the end of the quarter</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-top: 0.5rem;">Following scenarios define store count:
+                                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                                <li>If a store gets signed up on Ads in <strong>the quarter</strong> and doesn’t churn in <strong>by end of quarter</strong>, that counts as 1 net new store</li>
+                                                <li>If a store gets signed up on Ads in <strong>quarter</strong> and churns in <strong>the same quarter</strong>, that counts as 0 net new store</li>
+                                                <li>If a store begins the <strong>quarter</strong> with ads, and churns in <strong>current quarter</strong>, that counts as -1 net new store</li>
+                                                <li>If a store gets signed up on Ads in <strong>quarter</strong> and churns in <strong>the same quarter</strong>, and gets signed up again in <strong>the same quarter</strong>, that counts as 1 net new store</li>
+                                                <li>If store already has Ad <strong>in quarter</strong>, and another Ad is added, that counts as <strong>0</strong></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>AM Goaling:</h3>
+                    <ul>
+                        <li>AM goals for unoptimized Mx will focus on 3 metrics:
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li><strong>Mx Retention %:</strong> # of unique Mx retained over a given period</li>
+                                <li><strong>Videos Added:</strong> # of unique Mx with videos added over a given period</li>
+                                <li><strong>Photos Added:</strong> # of new photos added over a given period</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div style="background-color: #f9fafb; padding: 1rem; border-radius: 6px; border: 1px dashed #ced4da; margin-top: 1.5rem;">
+                        <p style="margin: 0; font-family: monospace; font-size: 0.9rem; color: #4b5563;">***MC to add a flag for the quarter</p>
+                        <p style="margin: 0.25rem 0 0 0; font-family: monospace; font-size: 0.9rem; color: #4b5563;">***MC to add analytics view in here</p>
+                        <p style="margin: 0.25rem 0 0 0; font-family: monospace; font-size: 0.9rem; color: #4b5563;">***MC to add info on what movate can submit that they might want reviewed, and information on timing for attainment - churn calcs, Mx retention viewed at EOQ, every 2 week process on checking for accuracy in the reporting</p>
+                        <p style="margin: 0.25rem 0 0 0; font-family: monospace; font-size: 0.9rem; color: #4b5563;">***MC to ask US team how they handle adjustments</p>
+                    </div>
+                `
+            },
+
+            {
+                id: "sales-texting-policy",
+                title: "Texting Policy",
+                category: "3. Sales & Support Process",
+                tags: ["policy", "texting", "compliance", "outreach", "pactsafe"],
+                content: `
+                    <h2>Texting Policy</h2>
+                    <h3>Can I Text Merchants Through Outreach?</h3>
+                    <p>Generally speaking no, unless under one of the following circumstances:</p>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+                        <li>Only when the Mx has explicitly consented to receive a text message from DoorDash in writing.</li>
+                        <li style="margin-top: 0.25rem;">When the merchant initiates the text exchange</li>
+                        <li style="margin-top: 0.25rem;">When sending contracts through PactSafe</li>
+                    </ol>
+                `
+            },
+
+            {
+                id: "general-new-hire-ramp",
+                title: "New Hire Ramp Scale",
+                category: "1. General",
+                tags: ["ramp", "outputs", "inputs", "expectations", "goals"],
+                content: `
+                    <h2>New Hire Ramp</h2>
+                    <h3>0/25/50/100 Ramp for Outputs</h3>
+                    <p><strong>Outputs</strong> are defined as: Ads, Promos, Photos, and Videos and Retention numbers</p>
+                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 1.5rem;">
+                        <li>Month 1 - MSM expectations for outputs are 0% of their fully ramped goal</li>
+                        <li>Month 2 - MSM expectations for outputs are 25% of their fully ramped goal</li>
+                        <li>Month 3 - MSM expectations for outputs are 50% of their fully ramped goal</li>
+                        <li>Month 4 - MSM expectations for outputs are 100% of their fully ramped goal</li>
+                    </ul>
+                    
+                    <p><strong>Inputs</strong> are defined as Talktime and the Number of Touchpoints. While these metrics are not goaled, they are tracked.</p>
+                `
+            },
+
+            {
+                id: "sales-resources-escalations",
+                title: "Call Library, Dictionary & Escalations",
+                category: "3. Sales & Support Process",
+                tags: ["call-library", "dictionary", "storefront", "pos", "escalations"],
+                content: `
+                    <h2>Call Library</h2>
+                    <p><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Vendor Master Call Library</span></p>
+
+                    <h2>Terminology & Acronyms</h2>
+                    <p>Please use the following link for a guide to all DoorDash Terminology, Acronyms, and Jargon:</p>
+                    <p><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">DoorDash Dictionary (Glossary, Jargon, Acronyms, & Business Metrics)</span></p>
+
+                    <h2>Online Ordering (formerly Storefront)</h2>
+                    <p>Direct your Mx to our <strong>Commerce Platform</strong> tab within the portal:<br>
+                    <code>https://www.doordash.com/merchant/storefront?business_id=<span style="color: #dc2626;">{insert here}</span></code></p>
+                    <p>You can also learn more about our Commerce Platform here:<br>
+                    <span style="color: #ff3008; text-decoration: underline; font-weight: bold;">https://merchants.doordash.com/en-ca/products/commerce-platform</span></p>
+
+                    <h2>Point of Sale Integrations (POS Integrations)</h2>
+                    <p>Direct your Mx to our store-level <strong>Integrations</strong> tab within the portal:<br>
+                    <code>https://www.doordash.com/merchant/integrations?store_id=<span style="color: #dc2626;">{insert here}</span></code></p>
+
+                    <h2>Escalation Paths</h2>
+                    <ol style="list-style-type: decimal; padding-left: 1.5rem;">
+                        <li>Check Slack: ctrl-f in slack channels “Was this questions already asked and answered”
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>#dd-am-costa-rica</li>
+                                <li>#movate-full-serve</li>
+                                <li>#movate-can-support-escalations</li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 0.5rem;">Check <span style="color: #ff3008; text-decoration: underline; font-weight: bold;">https://merchants.doordash.com/en-ca</span> (Merchant Facing)</li>
+                        <li style="margin-top: 0.5rem;"><strong>[Sheet] Movate SMB Escalation Matrix 2026</strong></li>
+                        <li style="margin-top: 0.5rem;">If cannot find answers through resources, check with:
+                            <ul style="list-style-type: none; padding-left: 0; margin-top: 0.25rem;">
+                                <li>Floor support ➔ Team Lead ➔ DoorDash Team Lead ➔ DoorDash Manager</li>
+                            </ul>
+                        </li>
+                    </ol>
+                `
+            },
+
+            {
+                id: "sales-contracting-ai-tools",
+                title: "Full Serve Contracting, AI Tools & Calculator",
+                category: "3. Sales & Support Process",
+                tags: ["contracting", "quoting", "ai-tools", "profit-calculator"],
+                content: `
+                    <h2>Full Serve Contracting</h2>
+                    <p>Only to be used for co-funded marketing, or customer preapproved rate changes. Review training deck here: <strong>[Deck] Movate Quoting & Contracting Training</strong></p>
+
+                    <h2>AI Tools</h2>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">https://unity.doordash.com/suites/data/ask-data-ai/</span></li>
+                        <li style="margin-top: 0.25rem;"><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">https://gemini.google.com/</span></li>
+                        <li style="margin-top: 0.25rem;"><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">https://chatgpt.com/</span></li>
+                        <li style="margin-top: 0.25rem;"><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Dashsell AI</span></li>
+                        <li style="margin-top: 0.25rem;"><strong>[Sheet] AI Repository - CAN Rx Success</strong></li>
+                    </ul>
+
+                    <h2>Profit Calculator / Take Home Pay</h2>
+                    <p><strong>[Sheet] Profit Calculator - Master Sheet</strong></p>
+                `
+            },
+
+            {
+                id: "general-roles-responsibilities",
+                title: "DoorDash Longtail Team: Roles & Responsibilities",
+                category: "1. General",
+                tags: ["roles", "responsibilities", "org-chart", "longtail", "team"],
+                content: `
+                    <h2>DoorDash Longtail Team: Roles & Responsibilities</h2>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                        <li>Vendor S&O
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li><strong>Tiffany Chen</strong>
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                        <li>Manages the relationship between Movate and DoorDash, including billing, hiring timelines, and performance reviews.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 0.75rem;">Sales S&O
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li><strong>Jess Jobanputra</strong>
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                        <li>Manages strategy and operations for the Canada SMB Post-Sales function including onshore and offshore</li>
+                                    </ul>
+                                </li>
+                                <li style="margin-top: 0.4rem;"><strong>Maya Chhabra</strong>
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                        <li>Leads strategy and operations for Movate account management</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 0.75rem;">Sales
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li><strong>Badih El-Hachem</strong>
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                        <li>Head of restaurant success for Canada SMB, including both offshore and onshore</li>
+                                    </ul>
+                                </li>
+                                <li style="margin-top: 0.4rem;"><strong>Vito Apa</strong>
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                        <li>Leads the sales strategy for the Movate team</li>
+                                    </ul>
+                                </li>
+                                <li style="margin-top: 0.4rem;"><strong>Samantha Asare</strong>
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                        <li>Team Lead for the Movate team, supports Vito on management and strategy for Movate</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 0.75rem;">Retention
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li><strong>Sydney Galt</strong>
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                        <li>Owns the Project Lifeline process including letting us know when Movate reps should be reaching out to churn risks / what those conversations should entail</li>
+                                    </ul>
+                                </li>
+                                <li style="margin-top: 0.4rem;"><strong>Savitri Nariswari</strong>
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                        <li>Works with Syd on Project Lifeline and approves rate changes. Is working on developing ready to use packages for rate changes.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 0.75rem;">MXP / Support
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li><strong>Gabrielle Campeau</strong>
+                                    <ul style="list-style-type: square; padding-left: 1.5rem; margin-top: 0.1rem;">
+                                        <li>Merchant Support Supervisor, often flags MxP requests that need escalation to Movate reps</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                `
+            },
+
+            {
+                id: "sales-job-aids-slack",
+                title: "Movate Job Aids & Slack Directory",
+                category: "3. Sales & Support Process",
+                tags: ["job-aid", "tooling", "slack", "channels", "directory"],
+                content: `
+                    <h2>Movate Created Job Aid: <span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Access Here</span></h2>
+                    <p><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Movate Tooling Access</span> <span style="color: #dc2626;">[Leadership View]</span></p>
+
+                    <h2>Slack Channels</h2>
+                    <p><strong>Frequently Used Slack Channels:</strong></p>
+                    
+                    <p style="margin-bottom: 0.25rem;"><strong>MXP Escalations:</strong></p>
+                    <p style="margin-top: 0; margin-bottom: 0.5rem; color: #ff3008; font-weight: bold;">#mss-mxp--urgent-requests-and-escalations</p>
+                    <p style="margin-top: 0; margin-left: 1rem;">Workflow: MXP Workflow (Make sure to fill in all required fields)<br>
+                    Please, add your TL as a CC on the thread of the request for visibility.</p>
+
+                    <p style="margin-bottom: 0.25rem;"><strong>Change of Ownership Issues (COO):</strong></p>
+                    <p style="margin-top: 0; margin-bottom: 1rem; color: #ff3008; font-weight: bold;">#ask-coo</p>
+
+                    <p style="margin-bottom: 0.25rem;"><strong>Virtual Brands reactivation or requests:</strong></p>
+                    <p style="margin-top: 0; margin-bottom: 1rem; color: #ff3008; font-weight: bold;">#ask-virtualbrands</p>
+
+                    <p style="margin-bottom: 0.25rem;"><strong>Questions for the Sales Team</strong></p>
+                    <p style="margin-top: 0; margin-bottom: 1rem; color: #ff3008; font-weight: bold;">#dd-am-costa-rica</p>
+
+                    <p style="margin-bottom: 0.25rem;"><strong>Account changes</strong></p>
+                    <p style="margin-top: 0; margin-bottom: 1rem; color: #ff3008; font-weight: bold;">#account_owner_changes</p>
+
+                    <p style="margin-bottom: 0.25rem;"><strong>Pre-Sales Movate Management Requests and Referrals to Pre-Sales</strong></p>
+                    <p style="margin-top: 0; color: #ff3008; font-weight: bold;">#movate-presales-adds</p>
+                `
+            },
+
+            {
+                id: "sales-dashboards-sheets",
+                title: "Important Sheets, Dashboards & Forms",
+                category: "3. Sales & Support Process",
+                tags: ["sheets", "dashboards", "forms", "lead-list", "cofunding"],
+                content: `
+                    <h2>Important Sheets / Dashboards / Forms</h2>
+                    <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                        <li><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Movate Lead List</span>
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>SOT for leads for the Movate team</li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 0.75rem;"><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Account Owner Changes Information Sheet with S&O Responses</span>
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Submissions from the account changes workflow</li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 0.75rem;"><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Cofunding Form</span>
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Process of submitting cofunding requests for Mx</li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 0.75rem;"><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Movate Dashboard</span>
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Sigma Dashboard that contains reporting and supplemental information</li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 0.75rem;"><span style="color: #ff3008; text-decoration: underline; font-weight: bold;">Credits Dashboard</span>
+                            <ul style="list-style-type: circle; padding-left: 1.5rem; margin-top: 0.25rem;">
+                                <li>Sigma Dashboard that contains Marketing credits for Movate managed Mx</li>
+                            </ul>
+                        </li>
+                    </ul>
+                `
+            },
+            
         ];
 
         // ENGINE RUNTIME CONTROL LAYER
